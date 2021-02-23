@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Status {
 
-    private String st_name;
+    private String stName;
     private double st_count;
     private ArrayList<ActivityType> at_list;
     private double st_percent;
@@ -19,18 +19,18 @@ public class Status {
 
     public Status(){}
 
-    public Status(String st_name, double st_count, ArrayList<ActivityType> at_list) {
-        this.st_name = st_name;
+    public Status(String stName, double st_count, ArrayList<ActivityType> at_list) {
+        this.stName = stName;
         this.st_count = st_count;
         this.at_list = at_list;
     }
 
-    public String getSt_name() {
-        return st_name;
+    public String getStName() {
+        return stName;
     }
 
-    public void setSt_name(String st_name) {
-        this.st_name = st_name;
+    public void setStName(String stName) {
+        this.stName = stName;
     }
 
     public double getSt_count() {
@@ -52,7 +52,7 @@ public class Status {
     @Override
     public String toString() {
         return "Status{" +
-                "st_name='" + st_name + '\'' +
+                "st_name='" + stName + '\'' +
                 ", st_count=" + st_count +
                 ", at_list=" + at_list +
                 ", st_percent=" + st_percent +
