@@ -9,7 +9,7 @@
 
 <div th:each="Status : ${results}">
 
-    <a th:text="'Status ' + ${Status.st_name + ': ' + Status.st_percent} + '%'">Status</a>
+    <a th:text="'Status ' + ${Status.stName + ': ' + Status.st_percent} + '%'">Status</a>
     <br/>
     <br/>
     <div th:each="Activity : ${Status.at_list}">
