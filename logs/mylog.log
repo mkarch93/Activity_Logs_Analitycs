@@ -1,0 +1,1163 @@
+2021-03-01 02:26:28.874  WARN 8024 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h32m48s971ms935µs900ns).
+2021-03-01 06:53:32.306  WARN 8024 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h27m3s432ms228µs400ns).
+2021-03-01 07:53:37.318  WARN 8024 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5s12ms94µs299ns).
+2021-03-01 09:53:19.502  WARN 8024 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h44m11s763ms804µs800ns).
+2021-03-01 11:08:03.250  WARN 8024 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m10s749ms84µs300ns).
+2021-03-01 11:28:44.478  INFO 8024 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:28:44.479  INFO 8024 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:28:44.487  INFO 8024 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 11:28:44.491  INFO 8024 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 11:28:44.600  INFO 8024 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : Starting ActivityLogsAnalyticsApplication using Java 13.0.2 on MironK-LT with PID 8024 (C:\Users\mironk\IdeaProjects\activity_logs_analytics\target\classes started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 11:28:44.600  INFO 8024 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : No active profile set, falling back to default profiles: default
+2021-03-01 11:28:44.753  INFO 8024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 11:28:44.763  INFO 8024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2021-03-01 11:28:44.872  INFO 8024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-01 11:28:44.873  INFO 8024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-01 11:28:44.873  INFO 8024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-01 11:28:44.903  INFO 8024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-01 11:28:44.903  INFO 8024 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 300 ms
+2021-03-01 11:28:44.930  INFO 8024 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-03-01 11:28:45.184  INFO 8024 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-03-01 11:28:45.190  INFO 8024 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 11:28:45.197  INFO 8024 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 11:28:45.388  INFO 8024 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 11:28:45.388  INFO 8024 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:28:45.517  WARN 8024 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 11:28:45.564  INFO 8024 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:28:45.683  INFO 8024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-01 11:28:45.705  INFO 8024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-01 11:28:45.712  INFO 8024 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : Started ActivityLogsAnalyticsApplication in 1.147 seconds (JVM running for 72988.871)
+2021-03-01 11:28:45.715  INFO 8024 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-01 11:28:47.644  INFO 16240 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 16240 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 11:28:47.646  INFO 16240 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 11:28:48.335  INFO 16240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 11:28:48.400  INFO 16240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-03-01 11:28:48.901  INFO 16240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 11:28:49.707  INFO 16240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 11:28:49.760  INFO 16240 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 11:28:49.810  INFO 16240 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 11:28:49.929  INFO 16240 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 11:28:50.079  INFO 16240 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 11:28:50.787  INFO 16240 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 11:28:50.798  INFO 16240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:28:51.532  WARN 16240 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 11:28:51.757  INFO 16240 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:28:52.146  INFO 16240 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.793 seconds (JVM running for 6.412)
+2021-03-01 11:28:52.359  INFO 16240 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:28:52.360  INFO 16240 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:28:52.363  INFO 16240 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 11:28:52.371  INFO 16240 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 11:43:46.972  INFO 16160 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 16160 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 11:43:46.974  INFO 16160 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 11:43:47.585  INFO 16160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 11:43:47.631  INFO 16160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2021-03-01 11:43:48.094  INFO 16160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 11:43:48.868  INFO 16160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 11:43:48.929  INFO 16160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 11:43:48.972  INFO 16160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 11:43:49.089  INFO 16160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 11:43:49.232  INFO 16160 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 11:43:49.843  INFO 16160 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 11:43:49.850  INFO 16160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:43:50.514  WARN 16160 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 11:43:50.710  INFO 16160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:43:51.105  INFO 16160 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.416 seconds (JVM running for 5.676)
+2021-03-01 11:43:51.286  INFO 16160 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:43:51.287  INFO 16160 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:43:51.290  INFO 16160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 11:43:51.297  INFO 16160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 11:44:20.153  INFO 18828 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 18828 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 11:44:20.155  INFO 18828 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 11:44:20.790  INFO 18828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 11:44:20.845  INFO 18828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2021-03-01 11:44:21.319  INFO 18828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 11:44:22.093  INFO 18828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 11:44:22.144  INFO 18828 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 11:44:22.193  INFO 18828 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 11:44:22.313  INFO 18828 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 11:44:22.470  INFO 18828 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 11:44:23.088  INFO 18828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 11:44:23.101  INFO 18828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:44:23.770  WARN 18828 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 11:44:23.985  INFO 18828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:44:24.385  INFO 18828 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.56 seconds (JVM running for 5.823)
+2021-03-01 11:44:24.561  INFO 18828 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:44:24.563  INFO 18828 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:44:24.565  INFO 18828 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 11:44:24.571  INFO 18828 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 11:52:34.677  INFO 20228 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 20228 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 11:52:34.680  INFO 20228 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 11:52:35.278  INFO 20228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 11:52:35.335  INFO 20228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2021-03-01 11:52:35.768  INFO 20228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 11:52:36.524  INFO 20228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 11:52:36.580  INFO 20228 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 11:52:36.623  INFO 20228 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 11:52:36.748  INFO 20228 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 11:52:36.894  INFO 20228 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 11:52:37.496  INFO 20228 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 11:52:37.504  INFO 20228 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:52:38.162  WARN 20228 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 11:52:38.356  INFO 20228 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:52:38.789  INFO 20228 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.447 seconds (JVM running for 5.694)
+2021-03-01 11:52:39.114  INFO 20228 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:52:39.116  INFO 20228 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:52:39.118  INFO 20228 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 11:52:39.124  INFO 20228 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 11:53:01.087  INFO 1596 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 1596 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 11:53:01.089  INFO 1596 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 11:53:01.672  INFO 1596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 11:53:01.724  INFO 1596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2021-03-01 11:53:02.180  INFO 1596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 11:53:02.933  INFO 1596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 11:53:02.989  INFO 1596 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 11:53:03.032  INFO 1596 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 11:53:03.156  INFO 1596 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 11:53:03.302  INFO 1596 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 11:53:03.910  INFO 1596 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 11:53:03.917  INFO 1596 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:53:04.587  WARN 1596 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 11:53:04.783  INFO 1596 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:53:05.171  INFO 1596 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.373 seconds (JVM running for 5.663)
+2021-03-01 11:53:05.454  INFO 1596 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:53:05.456  INFO 1596 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:53:05.458  INFO 1596 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 11:53:05.465  INFO 1596 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 11:54:05.104  INFO 16904 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 16904 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 11:54:05.106  INFO 16904 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 11:54:05.706  INFO 16904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 11:54:05.764  INFO 16904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2021-03-01 11:54:06.222  INFO 16904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 11:54:07.012  INFO 16904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 11:54:07.078  INFO 16904 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 11:54:07.121  INFO 16904 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 11:54:07.247  INFO 16904 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 11:54:07.395  INFO 16904 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 11:54:07.970  INFO 16904 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 11:54:07.985  INFO 16904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:54:08.628  WARN 16904 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 11:54:08.838  INFO 16904 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:54:09.235  INFO 16904 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.498 seconds (JVM running for 5.734)
+2021-03-01 11:54:09.552  INFO 16904 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:54:09.554  INFO 16904 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:54:09.556  INFO 16904 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 11:54:09.562  INFO 16904 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 11:55:58.451  INFO 17704 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 17704 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 11:55:58.454  INFO 17704 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 11:55:59.148  INFO 17704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 11:55:59.203  INFO 17704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2021-03-01 11:55:59.663  INFO 17704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 11:56:00.524  INFO 17704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 11:56:00.591  INFO 17704 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 11:56:00.642  INFO 17704 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 11:56:00.778  INFO 17704 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 11:56:00.915  INFO 17704 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 11:56:01.582  INFO 17704 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 11:56:01.590  INFO 17704 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:56:02.285  WARN 17704 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 11:56:02.466  INFO 17704 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:56:02.878  INFO 17704 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.795 seconds (JVM running for 6.156)
+2021-03-01 11:56:03.158  INFO 17704 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 11:56:03.160  INFO 17704 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 11:56:03.162  INFO 17704 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 11:56:03.170  INFO 17704 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:00:44.540  INFO 14208 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 14208 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:00:44.543  INFO 14208 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:00:45.167  INFO 14208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:00:45.213  INFO 14208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:00:45.679  INFO 14208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:00:46.527  INFO 14208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:00:46.582  INFO 14208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:00:46.633  INFO 14208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:00:46.748  INFO 14208 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:00:46.890  INFO 14208 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:00:47.516  INFO 14208 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:00:47.532  INFO 14208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:00:48.257  WARN 14208 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:00:48.448  INFO 14208 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:00:48.831  INFO 14208 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.595 seconds (JVM running for 5.924)
+2021-03-01 12:00:49.175  INFO 14208 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:00:49.177  INFO 14208 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:00:49.179  INFO 14208 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:00:49.186  INFO 14208 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:01:10.847  INFO 6404 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 6404 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:01:10.849  INFO 6404 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:01:11.495  INFO 6404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:01:11.547  INFO 6404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:01:12.017  INFO 6404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:01:12.793  INFO 6404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:01:12.855  INFO 6404 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:01:12.900  INFO 6404 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:01:13.033  INFO 6404 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:01:13.190  INFO 6404 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:01:13.836  INFO 6404 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:01:13.845  INFO 6404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:01:14.516  WARN 6404 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:01:14.732  INFO 6404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:01:15.193  INFO 6404 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.694 seconds (JVM running for 5.996)
+2021-03-01 12:01:15.513  INFO 6404 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:01:15.515  INFO 6404 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:01:15.518  INFO 6404 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:01:15.525  INFO 6404 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:20:31.313  INFO 7840 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 7840 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:20:31.316  INFO 7840 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:20:31.931  INFO 7840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:20:31.983  INFO 7840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:20:32.453  INFO 7840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:20:33.330  INFO 7840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:20:33.414  INFO 7840 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:20:33.494  INFO 7840 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:20:33.632  INFO 7840 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:20:33.788  INFO 7840 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:20:34.436  INFO 7840 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:20:34.446  INFO 7840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:20:35.226  WARN 7840 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:20:35.490  INFO 7840 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:20:35.982  INFO 7840 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 5.016 seconds (JVM running for 6.391)
+2021-03-01 12:20:36.646  INFO 7840 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:20:36.647  INFO 7840 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:20:36.649  INFO 7840 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:20:36.657  INFO 7840 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:24:22.269  INFO 18516 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 18516 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:24:22.272  INFO 18516 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:24:22.905  INFO 18516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:24:22.955  INFO 18516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:24:23.422  INFO 18516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:24:24.180  INFO 18516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:24:24.250  INFO 18516 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:24:24.316  INFO 18516 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:24:24.458  INFO 18516 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:24:24.615  INFO 18516 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:24:25.272  INFO 18516 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:24:25.282  INFO 18516 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:24:25.976  WARN 18516 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:24:26.189  INFO 18516 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:24:26.674  INFO 18516 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.721 seconds (JVM running for 6.03)
+2021-03-01 12:24:27.313  INFO 18516 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:24:27.314  INFO 18516 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:24:27.316  INFO 18516 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:24:27.322  INFO 18516 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:25:18.120  INFO 19876 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 19876 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:25:18.123  INFO 19876 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:25:18.779  INFO 19876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:25:18.826  INFO 19876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:25:19.276  INFO 19876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:25:20.070  INFO 19876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:25:20.125  INFO 19876 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:25:20.176  INFO 19876 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:25:20.311  INFO 19876 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:25:20.449  INFO 19876 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:25:21.054  INFO 19876 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:25:21.069  INFO 19876 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:25:21.749  WARN 19876 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:25:21.986  INFO 19876 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:25:22.396  INFO 19876 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.572 seconds (JVM running for 5.883)
+2021-03-01 12:25:22.985  INFO 19876 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:25:22.986  INFO 19876 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:25:22.988  INFO 19876 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:25:22.995  INFO 19876 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:29:37.010  INFO 10800 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 10800 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:29:37.013  INFO 10800 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:29:37.764  INFO 10800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:29:37.826  INFO 10800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:29:38.349  INFO 10800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:29:39.198  INFO 10800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:29:39.261  INFO 10800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:29:39.321  INFO 10800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:29:39.444  INFO 10800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:29:39.577  INFO 10800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:29:40.231  INFO 10800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:29:40.243  INFO 10800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:29:40.967  WARN 10800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:29:41.152  INFO 10800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:29:41.557  INFO 10800 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.91 seconds (JVM running for 6.273)
+2021-03-01 12:29:42.431  INFO 10800 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:29:42.433  INFO 10800 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:29:42.441  INFO 10800 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:29:42.448  INFO 10800 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:34:05.042  INFO 14976 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 14976 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:34:05.044  INFO 14976 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:34:05.693  INFO 14976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:34:05.742  INFO 14976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:34:06.193  INFO 14976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:34:06.968  INFO 14976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:34:07.023  INFO 14976 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:34:07.073  INFO 14976 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:34:07.199  INFO 14976 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:34:07.387  INFO 14976 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:34:08.033  INFO 14976 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:34:08.041  INFO 14976 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:34:08.792  WARN 14976 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:34:08.989  INFO 14976 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:34:09.409  INFO 14976 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.675 seconds (JVM running for 5.987)
+2021-03-01 12:34:10.482  INFO 14976 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:34:10.483  INFO 14976 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:34:10.486  INFO 14976 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:34:10.495  INFO 14976 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:34:46.463  INFO 13904 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 13904 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:34:46.465  INFO 13904 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:34:47.044  INFO 13904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:34:47.087  INFO 13904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:34:47.577  INFO 13904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:34:48.373  INFO 13904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:34:48.429  INFO 13904 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:34:48.485  INFO 13904 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:34:48.617  INFO 13904 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:34:48.782  INFO 13904 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:34:49.419  INFO 13904 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:34:49.430  INFO 13904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:34:50.165  WARN 13904 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:34:50.381  INFO 13904 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:34:50.854  INFO 13904 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.749 seconds (JVM running for 6.11)
+2021-03-01 12:34:51.891  INFO 13904 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:34:51.892  INFO 13904 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:34:51.894  INFO 13904 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:34:51.900  INFO 13904 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:44:14.041  INFO 4208 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 4208 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:44:14.044  INFO 4208 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:44:14.682  INFO 4208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:44:14.735  INFO 4208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:44:15.193  INFO 4208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:44:15.962  INFO 4208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:44:16.024  INFO 4208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:44:16.069  INFO 4208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:44:16.206  INFO 4208 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:44:16.366  INFO 4208 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:44:16.983  INFO 4208 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:44:16.997  INFO 4208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:44:17.659  WARN 4208 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:44:17.841  INFO 4208 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:44:18.248  INFO 4208 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.52 seconds (JVM running for 5.798)
+2021-03-01 12:44:20.139  INFO 4208 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:44:20.141  INFO 4208 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:44:20.143  INFO 4208 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:44:20.148  INFO 4208 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:45:41.620  INFO 2936 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 2936 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:45:41.623  INFO 2936 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:45:42.235  INFO 2936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:45:42.295  INFO 2936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:45:42.767  INFO 2936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:45:43.567  INFO 2936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:45:43.619  INFO 2936 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:45:43.669  INFO 2936 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:45:43.793  INFO 2936 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:45:43.942  INFO 2936 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:45:44.576  INFO 2936 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:45:44.590  INFO 2936 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:45:45.360  WARN 2936 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:45:45.564  INFO 2936 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:45:45.962  INFO 2936 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.636 seconds (JVM running for 5.968)
+2021-03-01 12:45:47.726  INFO 2936 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:45:47.728  INFO 2936 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:45:47.730  INFO 2936 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:45:47.735  INFO 2936 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:47:27.815  INFO 8944 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 8944 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:47:27.819  INFO 8944 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:47:28.512  INFO 8944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:47:28.574  INFO 8944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:47:29.133  INFO 8944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:47:29.983  INFO 8944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:47:30.039  INFO 8944 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:47:30.083  INFO 8944 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:47:30.205  INFO 8944 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:47:30.381  INFO 8944 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:47:31.082  INFO 8944 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:47:31.092  INFO 8944 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:47:31.795  WARN 8944 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:47:31.998  INFO 8944 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:47:32.397  INFO 8944 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.935 seconds (JVM running for 6.724)
+2021-03-01 12:47:34.217  INFO 8944 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:47:34.219  INFO 8944 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:47:34.220  INFO 8944 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:47:34.225  INFO 8944 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 12:50:53.316  INFO 9728 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 9728 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 12:50:53.318  INFO 9728 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 12:50:53.927  INFO 9728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 12:50:53.982  INFO 9728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2021-03-01 12:50:54.437  INFO 9728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 12:50:55.325  INFO 9728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 12:50:55.381  INFO 9728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 12:50:55.430  INFO 9728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 12:50:55.582  INFO 9728 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 12:50:55.786  INFO 9728 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 12:50:56.453  INFO 9728 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 12:50:56.467  INFO 9728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:50:57.165  WARN 9728 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 12:50:57.385  INFO 9728 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:50:57.814  INFO 9728 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.794 seconds (JVM running for 6.123)
+2021-03-01 12:50:59.664  INFO 9728 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 12:50:59.665  INFO 9728 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 12:50:59.667  INFO 9728 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 12:50:59.672  INFO 9728 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 13:03:07.682  INFO 13524 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 13524 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 13:03:07.684  INFO 13524 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 13:03:08.259  INFO 13524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 13:03:08.324  INFO 13524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-03-01 13:03:08.773  INFO 13524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 13:03:09.555  INFO 13524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 13:03:09.619  INFO 13524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 13:03:09.661  INFO 13524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 13:03:09.787  INFO 13524 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 13:03:09.936  INFO 13524 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 13:03:10.573  INFO 13524 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 13:03:10.580  INFO 13524 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:03:11.228  WARN 13524 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 13:03:11.421  INFO 13524 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:03:11.826  INFO 13524 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.453 seconds (JVM running for 5.758)
+2021-03-01 13:03:13.664  INFO 13524 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:03:13.666  INFO 13524 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:03:13.667  INFO 13524 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 13:03:13.672  INFO 13524 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 13:12:11.686  INFO 18076 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 18076 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 13:12:11.688  INFO 18076 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 13:12:12.314  INFO 18076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 13:12:12.373  INFO 18076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-03-01 13:12:12.844  INFO 18076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 13:12:13.719  INFO 18076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 13:12:13.777  INFO 18076 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 13:12:13.827  INFO 18076 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 13:12:13.950  INFO 18076 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 13:12:14.104  INFO 18076 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 13:12:14.781  INFO 18076 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 13:12:14.789  INFO 18076 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:12:15.466  WARN 18076 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 13:12:15.668  INFO 18076 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:12:16.053  INFO 18076 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.666 seconds (JVM running for 6.011)
+2021-03-01 13:12:17.905  INFO 18076 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:12:17.906  INFO 18076 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:12:17.908  INFO 18076 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 13:12:17.914  INFO 18076 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 13:13:33.995  INFO 19292 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 19292 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 13:13:33.997  INFO 19292 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 13:13:34.669  INFO 19292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 13:13:34.716  INFO 19292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2021-03-01 13:13:35.162  INFO 19292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 13:13:35.930  INFO 19292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 13:13:35.989  INFO 19292 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 13:13:36.036  INFO 19292 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 13:13:36.158  INFO 19292 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 13:13:36.289  INFO 19292 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 13:13:36.951  INFO 19292 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 13:13:36.963  INFO 19292 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:13:37.694  WARN 19292 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 13:13:37.900  INFO 19292 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:13:38.321  INFO 19292 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.652 seconds (JVM running for 5.976)
+2021-03-01 13:13:40.269  INFO 19292 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:13:40.270  INFO 19292 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:13:40.272  INFO 19292 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 13:13:40.280  INFO 19292 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 13:14:47.418  INFO 19404 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 19404 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 13:14:47.420  INFO 19404 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 13:14:48.040  INFO 19404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 13:14:48.086  INFO 19404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2021-03-01 13:14:48.577  INFO 19404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 13:14:49.391  INFO 19404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 13:14:49.456  INFO 19404 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 13:14:49.512  INFO 19404 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 13:14:49.670  INFO 19404 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 13:14:49.838  INFO 19404 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 13:14:50.475  INFO 19404 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 13:14:50.487  INFO 19404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:14:51.203  WARN 19404 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 13:14:51.411  INFO 19404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:14:51.801  INFO 19404 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.757 seconds (JVM running for 6.162)
+2021-03-01 13:14:53.677  INFO 19404 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:14:53.678  INFO 19404 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:14:53.680  INFO 19404 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 13:14:53.685  INFO 19404 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 13:21:02.776  INFO 2164 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 2164 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 13:21:02.779  INFO 2164 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 13:21:03.420  INFO 2164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 13:21:03.469  INFO 2164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2021-03-01 13:21:04.060  INFO 2164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 13:21:04.884  INFO 2164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 13:21:04.939  INFO 2164 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 13:21:04.991  INFO 2164 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 13:21:05.118  INFO 2164 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 13:21:05.258  INFO 2164 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 13:21:05.893  INFO 2164 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 13:21:05.901  INFO 2164 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:21:06.602  WARN 2164 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 13:21:06.797  INFO 2164 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:21:07.197  INFO 2164 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.724 seconds (JVM running for 6.039)
+2021-03-01 13:21:09.216  INFO 2164 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:21:09.218  INFO 2164 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:21:09.219  INFO 2164 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 13:21:09.224  INFO 2164 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 13:23:59.700  INFO 19620 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 19620 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 13:23:59.703  INFO 19620 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 13:24:00.358  INFO 19620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 13:24:00.410  INFO 19620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-03-01 13:24:00.910  INFO 19620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 13:24:01.680  INFO 19620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 13:24:01.773  INFO 19620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 13:24:01.822  INFO 19620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 13:24:01.947  INFO 19620 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 13:24:02.097  INFO 19620 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 13:24:02.807  INFO 19620 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 13:24:02.814  INFO 19620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:24:03.522  WARN 19620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 13:24:03.756  INFO 19620 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:24:04.179  INFO 19620 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.882 seconds (JVM running for 6.227)
+2021-03-01 13:24:06.356  INFO 19620 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:24:06.357  INFO 19620 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:24:06.359  INFO 19620 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 13:24:06.364  INFO 19620 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 13:41:31.159  INFO 14040 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 14040 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 13:41:31.163  INFO 14040 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 13:41:31.922  INFO 14040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 13:41:31.971  INFO 14040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2021-03-01 13:41:32.522  INFO 14040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 13:41:33.439  INFO 14040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 13:41:33.508  INFO 14040 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 13:41:33.556  INFO 14040 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 13:41:33.682  INFO 14040 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 13:41:33.829  INFO 14040 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 13:41:34.534  INFO 14040 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 13:41:34.546  INFO 14040 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:41:35.290  WARN 14040 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 13:41:35.509  INFO 14040 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:41:35.923  INFO 14040 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 5.171 seconds (JVM running for 6.755)
+2021-03-01 13:41:37.693  INFO 14040 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 13:41:37.694  INFO 14040 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 13:41:37.696  INFO 14040 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 13:41:37.702  INFO 14040 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 14:00:09.137  INFO 5696 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 5696 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 14:00:09.137  INFO 5696 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 14:00:09.743  INFO 5696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 14:00:09.802  INFO 5696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2021-03-01 14:00:10.273  INFO 5696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 14:00:11.177  INFO 5696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 14:00:11.238  INFO 5696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 14:00:11.281  INFO 5696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 14:00:11.403  INFO 5696 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 14:00:11.553  INFO 5696 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 14:00:12.180  INFO 5696 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 14:00:12.193  INFO 5696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:00:12.908  WARN 5696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 14:00:13.131  INFO 5696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:00:13.547  INFO 5696 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.702 seconds (JVM running for 6.14)
+2021-03-01 14:00:14.785  INFO 5696 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:00:14.787  INFO 5696 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:00:14.790  INFO 5696 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 14:00:14.795  INFO 5696 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 14:04:08.147  INFO 13604 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 13604 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 14:04:08.149  INFO 13604 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 14:04:18.795  INFO 13604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 14:04:18.847  INFO 13604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-03-01 14:04:19.347  INFO 13604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 14:04:20.148  INFO 13604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 14:04:20.206  INFO 13604 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 14:04:20.248  INFO 13604 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 14:04:20.373  INFO 13604 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 14:04:20.522  INFO 13604 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 14:04:21.124  INFO 13604 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 14:04:21.133  INFO 13604 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:04:21.812  WARN 13604 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 14:04:22.008  INFO 13604 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:04:22.391  INFO 13604 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 14.518 seconds (JVM running for 15.918)
+2021-03-01 14:04:23.516  INFO 13604 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:04:23.517  INFO 13604 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:04:23.518  INFO 13604 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 14:04:23.524  INFO 13604 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 14:07:43.501  INFO 13492 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 13492 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 14:07:43.503  INFO 13492 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 14:07:44.067  INFO 13492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 14:07:44.111  INFO 13492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2021-03-01 14:07:44.602  INFO 13492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 14:07:45.399  INFO 13492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 14:07:45.453  INFO 13492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 14:07:45.497  INFO 13492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 14:07:45.614  INFO 13492 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 14:07:45.754  INFO 13492 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 14:07:46.361  INFO 13492 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 14:07:46.370  INFO 13492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:07:47.058  WARN 13492 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 14:07:47.280  INFO 13492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:07:47.679  INFO 13492 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.478 seconds (JVM running for 5.904)
+2021-03-01 14:07:48.776  INFO 13492 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:07:48.778  INFO 13492 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:07:48.781  INFO 13492 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 14:07:48.790  INFO 13492 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 14:09:15.911  INFO 10872 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 10872 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 14:09:15.913  INFO 10872 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 14:09:16.643  INFO 10872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 14:09:16.696  INFO 10872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-03-01 14:09:17.198  INFO 10872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 14:09:18.138  INFO 10872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 14:09:18.197  INFO 10872 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 14:09:18.246  INFO 10872 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 14:09:18.407  INFO 10872 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 14:09:18.594  INFO 10872 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 14:09:19.228  INFO 10872 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 14:09:19.237  INFO 10872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:09:19.943  WARN 10872 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 14:09:20.141  INFO 10872 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:09:20.546  INFO 10872 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.936 seconds (JVM running for 6.298)
+2021-03-01 14:09:21.679  INFO 10872 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:09:21.680  INFO 10872 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:09:21.681  INFO 10872 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 14:09:21.686  INFO 10872 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 14:09:48.200  INFO 16964 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 16964 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 14:09:48.202  INFO 16964 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 14:09:48.809  INFO 16964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 14:09:48.859  INFO 16964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-03-01 14:09:49.346  INFO 16964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 14:09:50.140  INFO 16964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 14:09:50.201  INFO 16964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 14:09:50.248  INFO 16964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 14:09:50.370  INFO 16964 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 14:09:50.512  INFO 16964 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 14:09:51.159  INFO 16964 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 14:09:51.168  INFO 16964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:09:51.902  WARN 16964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 14:09:52.092  INFO 16964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:09:52.484  INFO 16964 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.592 seconds (JVM running for 6.119)
+2021-03-01 14:09:53.635  INFO 16964 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:09:53.636  INFO 16964 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:09:53.639  INFO 16964 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 14:09:53.646  INFO 16964 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 14:15:04.445  INFO 10756 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 10756 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 14:15:04.447  INFO 10756 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 14:15:05.075  INFO 10756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 14:15:05.130  INFO 10756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2021-03-01 14:15:05.599  INFO 10756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 14:15:06.395  INFO 10756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 14:15:06.446  INFO 10756 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 14:15:06.488  INFO 10756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 14:15:06.622  INFO 10756 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 14:15:06.766  INFO 10756 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 14:15:07.382  INFO 10756 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 14:15:07.390  INFO 10756 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:15:08.073  WARN 10756 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 14:15:08.277  INFO 10756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:15:08.702  INFO 10756 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.571 seconds (JVM running for 5.846)
+2021-03-01 14:15:09.812  INFO 10756 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:15:09.813  INFO 10756 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:15:09.815  INFO 10756 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 14:15:09.821  INFO 10756 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 14:18:18.055  INFO 13000 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 13000 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 14:18:18.058  INFO 13000 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 14:18:18.732  INFO 13000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 14:18:18.783  INFO 13000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-03-01 14:18:19.286  INFO 13000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 14:18:20.101  INFO 13000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 14:18:20.157  INFO 13000 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 14:18:20.207  INFO 13000 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 14:18:20.340  INFO 13000 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 14:18:20.574  INFO 13000 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 14:18:21.299  INFO 13000 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 14:18:21.308  INFO 13000 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:18:21.999  WARN 13000 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 14:18:22.203  INFO 13000 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:18:22.769  INFO 13000 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 5.061 seconds (JVM running for 6.372)
+2021-03-01 14:18:23.997  INFO 13000 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:18:23.998  INFO 13000 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:18:24.000  INFO 13000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 14:18:24.007  INFO 13000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 14:57:18.445  WARN 8024 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=7m29s951ms535µs700ns).
+2021-03-01 15:20:04.769  INFO 20920 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 20920 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 15:20:04.771  INFO 20920 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 15:20:05.427  INFO 20920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 15:20:05.482  INFO 20920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2021-03-01 15:20:05.997  INFO 20920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 15:20:06.782  INFO 20920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 15:20:06.844  INFO 20920 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 15:20:06.897  INFO 20920 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 15:20:07.020  INFO 20920 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 15:20:07.155  INFO 20920 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 15:20:07.799  INFO 20920 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 15:20:07.809  INFO 20920 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 15:20:08.458  WARN 20920 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 15:20:08.666  INFO 20920 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 15:20:09.049  INFO 20920 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.596 seconds (JVM running for 5.961)
+2021-03-01 15:20:10.918  INFO 20920 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 15:20:10.919  INFO 20920 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 15:20:10.921  INFO 20920 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 15:20:10.925  INFO 20920 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 15:31:08.325  INFO 19180 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 19180 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 15:31:08.328  INFO 19180 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 15:31:08.934  INFO 19180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 15:31:08.988  INFO 19180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2021-03-01 15:31:09.466  INFO 19180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 15:31:10.245  INFO 19180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 15:31:10.308  INFO 19180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 15:31:10.348  INFO 19180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 15:31:10.476  INFO 19180 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 15:31:10.649  INFO 19180 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 15:31:11.236  INFO 19180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 15:31:11.245  INFO 19180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 15:31:11.884  WARN 19180 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 15:31:12.081  INFO 19180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 15:31:12.463  INFO 19180 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.449 seconds (JVM running for 5.723)
+2021-03-01 15:31:13.113  INFO 19180 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 15:31:13.114  INFO 19180 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 15:31:13.116  INFO 19180 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 15:31:13.122  INFO 19180 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 15:33:28.120  INFO 16880 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 16880 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 15:33:28.124  INFO 16880 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 15:33:28.739  INFO 16880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 15:33:28.787  INFO 16880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2021-03-01 15:33:29.263  INFO 16880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 15:33:30.032  INFO 16880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 15:33:30.087  INFO 16880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 15:33:30.134  INFO 16880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 15:33:30.260  INFO 16880 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 15:33:30.410  INFO 16880 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 15:33:30.992  INFO 16880 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 15:33:31.000  INFO 16880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 15:33:31.647  WARN 16880 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 15:33:31.836  INFO 16880 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 15:33:32.212  INFO 16880 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.407 seconds (JVM running for 5.635)
+2021-03-01 15:33:32.895  INFO 16880 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 15:33:32.896  INFO 16880 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 15:33:32.898  INFO 16880 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 15:33:32.905  INFO 16880 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 15:36:17.584  INFO 11780 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 11780 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 15:36:17.587  INFO 11780 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 15:36:18.190  INFO 11780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 15:36:18.243  INFO 11780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2021-03-01 15:36:18.687  INFO 11780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 15:36:19.421  INFO 11780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 15:36:19.477  INFO 11780 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 15:36:19.520  INFO 11780 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 15:36:19.641  INFO 11780 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 15:36:19.793  INFO 11780 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 15:36:20.365  INFO 11780 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 15:36:20.372  INFO 11780 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 15:36:21.030  WARN 11780 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 15:36:21.221  INFO 11780 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 15:36:21.598  INFO 11780 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.357 seconds (JVM running for 5.598)
+2021-03-01 15:36:22.251  INFO 11780 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 15:36:22.252  INFO 11780 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 15:36:22.254  INFO 11780 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 15:36:22.259  INFO 11780 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 15:59:34.792  INFO 1792 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 1792 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 15:59:34.793  INFO 1792 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 15:59:35.373  INFO 1792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 15:59:35.433  INFO 1792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2021-03-01 15:59:35.912  INFO 1792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 15:59:36.728  INFO 1792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 15:59:36.786  INFO 1792 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 15:59:36.827  INFO 1792 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 15:59:36.954  INFO 1792 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 15:59:37.125  INFO 1792 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 15:59:37.707  INFO 1792 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 15:59:37.715  INFO 1792 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 15:59:38.380  WARN 1792 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 15:59:38.576  INFO 1792 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 15:59:38.962  INFO 1792 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.469 seconds (JVM running for 5.775)
+2021-03-01 15:59:39.247  INFO 1792 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 15:59:39.248  INFO 1792 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 15:59:39.251  INFO 1792 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 15:59:39.261  INFO 1792 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:01:12.519  INFO 20576 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 20576 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:01:12.522  INFO 20576 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:01:13.110  INFO 20576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:01:13.156  INFO 20576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:01:13.613  INFO 20576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:01:14.419  INFO 20576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:01:14.474  INFO 20576 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:01:14.522  INFO 20576 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:01:14.639  INFO 20576 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:01:14.774  INFO 20576 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:01:15.382  INFO 20576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:01:15.390  INFO 20576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:01:16.067  WARN 20576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:01:16.269  INFO 20576 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:01:16.657  INFO 20576 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 14.456 seconds (JVM running for 15.704)
+2021-03-01 16:01:18.612  INFO 20576 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:01:18.614  INFO 20576 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:01:18.616  INFO 20576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:01:18.622  INFO 20576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:02:01.015  INFO 16884 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 16884 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:02:01.018  INFO 16884 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:02:01.595  INFO 16884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:02:01.643  INFO 16884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:02:02.098  INFO 16884 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:02:02.895  INFO 16884 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:02:02.946  INFO 16884 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:02:02.994  INFO 16884 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:02:03.112  INFO 16884 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:02:03.269  INFO 16884 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:02:03.862  INFO 16884 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:02:03.877  INFO 16884 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:02:04.555  WARN 16884 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:02:04.749  INFO 16884 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:02:05.116  INFO 16884 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.403 seconds (JVM running for 5.677)
+2021-03-01 16:02:07.018  INFO 16884 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:02:07.019  INFO 16884 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:02:07.021  INFO 16884 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:02:07.028  INFO 16884 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:05:20.412  INFO 19992 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 19992 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:05:20.415  INFO 19992 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:05:21.068  INFO 19992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:05:21.140  INFO 19992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:05:21.681  INFO 19992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:05:22.503  INFO 19992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:05:22.578  INFO 19992 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:05:22.637  INFO 19992 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:05:22.770  INFO 19992 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:05:22.926  INFO 19992 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:05:23.511  INFO 19992 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:05:23.520  INFO 19992 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:05:24.129  WARN 19992 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:05:24.337  INFO 19992 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:05:24.731  INFO 19992 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.668 seconds (JVM running for 5.971)
+2021-03-01 16:05:26.583  INFO 19992 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:05:26.584  INFO 19992 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:05:26.586  INFO 19992 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:05:26.591  INFO 19992 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:13:07.695  INFO 1448 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 1448 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:13:07.698  INFO 1448 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:13:08.332  INFO 1448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:13:08.386  INFO 1448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:13:08.988  INFO 1448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:13:09.784  INFO 1448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:13:09.850  INFO 1448 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:13:09.899  INFO 1448 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:13:10.046  INFO 1448 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:13:10.200  INFO 1448 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:13:10.855  INFO 1448 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:13:10.864  INFO 1448 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:13:11.548  WARN 1448 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:13:11.749  INFO 1448 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:13:12.153  INFO 1448 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.792 seconds (JVM running for 6.172)
+2021-03-01 16:13:12.345  INFO 1448 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:13:12.347  INFO 1448 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:13:12.349  INFO 1448 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:13:12.356  INFO 1448 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:13:46.175  INFO 3588 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 3588 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:13:46.178  INFO 3588 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:13:46.751  INFO 3588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:13:46.801  INFO 3588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:13:47.264  INFO 3588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:13:48.048  INFO 3588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:13:48.099  INFO 3588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:13:48.149  INFO 3588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:13:48.263  INFO 3588 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:13:48.401  INFO 3588 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:13:49.038  INFO 3588 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:13:49.045  INFO 3588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:13:49.784  WARN 3588 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:13:50.000  INFO 3588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:13:50.377  INFO 3588 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.503 seconds (JVM running for 5.841)
+2021-03-01 16:13:50.545  INFO 3588 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters
+2021-03-01 16:13:50.923  INFO 3588 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters. Success
+2021-03-01 16:13:50.923  INFO 3588 --- [main] c.r.a.service.ActivityLogService         : Start data preparing
+2021-03-01 16:13:50.924  INFO 3588 --- [main] c.r.a.service.ActivityLogService         : Start calculation of percents for statuses and activity types
+2021-03-01 16:13:50.924  INFO 3588 --- [main] c.r.a.service.ActivityLogService         : Finish calculation of percents
+2021-03-01 16:13:50.924  INFO 3588 --- [main] c.r.a.service.ActivityLogService         : Finish data preparing
+2021-03-01 16:13:50.937  INFO 3588 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:13:50.938  INFO 3588 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:13:50.940  INFO 3588 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:13:50.946  INFO 3588 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:14:42.377  INFO 4904 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 4904 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:14:42.380  INFO 4904 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:14:43.007  INFO 4904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:14:43.059  INFO 4904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:14:43.520  INFO 4904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:14:44.311  INFO 4904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:14:44.372  INFO 4904 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:14:44.416  INFO 4904 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:14:44.543  INFO 4904 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:14:44.717  INFO 4904 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:14:45.355  INFO 4904 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:14:45.365  INFO 4904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:14:46.040  WARN 4904 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:14:46.242  INFO 4904 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:14:46.626  INFO 4904 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.592 seconds (JVM running for 6.003)
+2021-03-01 16:14:46.816  INFO 4904 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters
+2021-03-01 16:14:47.196  INFO 4904 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters. Success
+2021-03-01 16:14:47.197  INFO 4904 --- [main] c.r.a.service.ActivityLogService         : Start data preparing
+2021-03-01 16:14:47.197  INFO 4904 --- [main] c.r.a.service.ActivityLogService         : Start calculation of percents for statuses and activity types
+2021-03-01 16:14:47.198  INFO 4904 --- [main] c.r.a.service.ActivityLogService         : Finish calculation of percents
+2021-03-01 16:14:47.198  INFO 4904 --- [main] c.r.a.service.ActivityLogService         : Finish data preparing
+2021-03-01 16:14:47.213  INFO 4904 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:14:47.214  INFO 4904 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:14:47.217  INFO 4904 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:14:47.223  INFO 4904 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:18:08.798  INFO 20804 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 20804 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:18:08.800  INFO 20804 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:18:09.410  INFO 20804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:18:09.475  INFO 20804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:18:09.941  INFO 20804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:18:10.755  INFO 20804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:18:10.806  INFO 20804 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:18:10.849  INFO 20804 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:18:10.970  INFO 20804 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:18:11.128  INFO 20804 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:18:11.753  INFO 20804 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:18:11.764  INFO 20804 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:18:12.473  WARN 20804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:18:12.690  INFO 20804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:18:13.079  INFO 20804 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.592 seconds (JVM running for 5.885)
+2021-03-01 16:18:13.278  INFO 20804 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters
+2021-03-01 16:18:13.635  INFO 20804 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters. Success
+2021-03-01 16:18:13.635  INFO 20804 --- [main] c.r.a.service.ActivityLogService         : Start data preparing
+2021-03-01 16:18:13.636  INFO 20804 --- [main] c.r.a.service.ActivityLogService         : Start calculation of percents for statuses and activity types
+2021-03-01 16:18:13.636  INFO 20804 --- [main] c.r.a.service.ActivityLogService         : Finish calculation of percents
+2021-03-01 16:18:13.636  INFO 20804 --- [main] c.r.a.service.ActivityLogService         : Finish data preparing
+2021-03-01 16:18:13.651  INFO 20804 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:18:13.652  INFO 20804 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:18:13.654  INFO 20804 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:18:13.659  INFO 20804 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:18:37.880  INFO 9444 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 9444 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:18:37.883  INFO 9444 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:18:38.521  INFO 9444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:18:38.570  INFO 9444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:18:39.031  INFO 9444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:18:39.802  INFO 9444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:18:39.860  INFO 9444 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:18:39.908  INFO 9444 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:18:40.047  INFO 9444 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:18:40.212  INFO 9444 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:18:40.837  INFO 9444 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:18:40.847  INFO 9444 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:18:41.537  WARN 9444 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:18:41.761  INFO 9444 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:18:42.181  INFO 9444 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.617 seconds (JVM running for 5.929)
+2021-03-01 16:18:42.364  INFO 9444 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters
+2021-03-01 16:18:42.736  INFO 9444 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters. Success
+2021-03-01 16:18:42.736  INFO 9444 --- [main] c.r.a.service.ActivityLogService         : Start data preparing
+2021-03-01 16:18:42.737  INFO 9444 --- [main] c.r.a.service.ActivityLogService         : Start calculation of percents for statuses and activity types
+2021-03-01 16:18:42.737  INFO 9444 --- [main] c.r.a.service.ActivityLogService         : Finish calculation of percents
+2021-03-01 16:18:42.737  INFO 9444 --- [main] c.r.a.service.ActivityLogService         : Finish data preparing
+2021-03-01 16:18:42.753  INFO 9444 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:18:42.754  INFO 9444 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:18:42.755  INFO 9444 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:18:42.762  INFO 9444 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:19:30.665  INFO 20740 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 20740 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:19:30.667  INFO 20740 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:19:31.278  INFO 20740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:19:31.327  INFO 20740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:19:31.825  INFO 20740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:19:32.633  INFO 20740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:19:32.705  INFO 20740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:19:32.759  INFO 20740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:19:32.883  INFO 20740 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:19:33.059  INFO 20740 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:19:33.698  INFO 20740 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:19:33.709  INFO 20740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:19:34.444  WARN 20740 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:19:34.653  INFO 20740 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:19:35.066  INFO 20740 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.694 seconds (JVM running for 6.04)
+2021-03-01 16:19:35.251  INFO 20740 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters
+2021-03-01 16:19:35.643  INFO 20740 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters. Success
+2021-03-01 16:19:35.643  INFO 20740 --- [main] c.r.a.service.ActivityLogService         : Start data preparing
+2021-03-01 16:19:35.644  INFO 20740 --- [main] c.r.a.service.ActivityLogService         : Start calculation of percents for statuses and activity types
+2021-03-01 16:19:35.644  INFO 20740 --- [main] c.r.a.service.ActivityLogService         : Finish calculation of percents
+2021-03-01 16:19:35.644  INFO 20740 --- [main] c.r.a.service.ActivityLogService         : Finish data preparing
+2021-03-01 16:19:35.660  INFO 20740 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:19:35.661  INFO 20740 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:19:35.664  INFO 20740 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:19:35.669  INFO 20740 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:19:50.879  INFO 4968 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 4968 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:19:50.882  INFO 4968 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:19:51.517  INFO 4968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:19:51.580  INFO 4968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:19:52.092  INFO 4968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:19:52.884  INFO 4968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:19:52.944  INFO 4968 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:19:52.988  INFO 4968 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:19:53.113  INFO 4968 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:19:53.267  INFO 4968 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:19:53.924  INFO 4968 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:19:53.934  INFO 4968 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:19:54.631  WARN 4968 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:19:54.855  INFO 4968 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:19:55.259  INFO 4968 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.629 seconds (JVM running for 5.937)
+2021-03-01 16:19:55.449  INFO 4968 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters
+2021-03-01 16:19:55.805  INFO 4968 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters. Success
+2021-03-01 16:19:55.805  INFO 4968 --- [main] c.r.a.service.ActivityLogService         : Start data preparing
+2021-03-01 16:19:55.806  INFO 4968 --- [main] c.r.a.service.ActivityLogService         : Start calculation of percents for statuses and activity types
+2021-03-01 16:19:55.806  INFO 4968 --- [main] c.r.a.service.ActivityLogService         : Finish calculation of percents
+2021-03-01 16:19:55.806  INFO 4968 --- [main] c.r.a.service.ActivityLogService         : Finish data preparing
+2021-03-01 16:19:55.822  INFO 4968 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:19:55.823  INFO 4968 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:19:55.826  INFO 4968 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:19:55.833  INFO 4968 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:27:28.920  INFO 20552 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 20552 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:27:28.922  INFO 20552 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:27:29.687  INFO 20552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:27:29.750  INFO 20552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:27:30.454  INFO 20552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:27:31.331  INFO 20552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:27:31.389  INFO 20552 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:27:31.435  INFO 20552 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:27:31.563  INFO 20552 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:27:31.726  INFO 20552 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:27:32.375  INFO 20552 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:27:32.383  INFO 20552 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:27:33.101  WARN 20552 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:27:33.300  INFO 20552 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:27:33.703  INFO 20552 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 5.109 seconds (JVM running for 6.536)
+2021-03-01 16:27:33.889  INFO 20552 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters
+2021-03-01 16:27:34.257  INFO 20552 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters. Success
+2021-03-01 16:27:34.257  INFO 20552 --- [main] c.r.a.service.ActivityLogService         : Start data preparing
+2021-03-01 16:27:34.258  INFO 20552 --- [main] c.r.a.service.ActivityLogService         : Start calculation of percents for statuses and activity types
+2021-03-01 16:27:34.258  INFO 20552 --- [main] c.r.a.service.ActivityLogService         : Finish calculation of percents
+2021-03-01 16:27:34.258  INFO 20552 --- [main] c.r.a.service.ActivityLogService         : Finish data preparing
+2021-03-01 16:27:34.280  INFO 20552 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:27:34.282  INFO 20552 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:27:34.284  INFO 20552 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:27:34.291  INFO 20552 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:28:07.575  INFO 19892 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 19892 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:28:07.578  INFO 19892 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:28:08.228  INFO 19892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:28:08.287  INFO 19892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:28:08.760  INFO 19892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:28:09.525  INFO 19892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:28:09.585  INFO 19892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:28:09.630  INFO 19892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:28:09.752  INFO 19892 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:28:09.927  INFO 19892 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:28:10.590  INFO 19892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:28:10.603  INFO 19892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:28:11.293  WARN 19892 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:28:11.486  INFO 19892 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:28:11.874  INFO 19892 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.627 seconds (JVM running for 5.926)
+2021-03-01 16:28:12.068  INFO 19892 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters
+2021-03-01 16:28:12.438  INFO 19892 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters. Success
+2021-03-01 16:28:12.438  INFO 19892 --- [main] c.r.a.service.ActivityLogService         : Start data preparing
+2021-03-01 16:28:12.440  INFO 19892 --- [main] c.r.a.service.ActivityLogService         : Start calculation of percents for statuses and activity types
+2021-03-01 16:28:12.440  INFO 19892 --- [main] c.r.a.service.ActivityLogService         : Finish calculation of percents
+2021-03-01 16:28:12.440  INFO 19892 --- [main] c.r.a.service.ActivityLogService         : Finish data preparing
+2021-03-01 16:28:12.459  INFO 19892 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:28:12.461  INFO 19892 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:28:12.464  INFO 19892 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:28:12.471  INFO 19892 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:47:56.222  INFO 8024 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:47:56.225  INFO 8024 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:47:56.232  INFO 8024 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-03-01 16:47:56.236  INFO 8024 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-03-01 16:47:56.375  INFO 8024 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : Starting ActivityLogsAnalyticsApplication using Java 13.0.2 on MironK-LT with PID 8024 (C:\Users\mironk\IdeaProjects\activity_logs_analytics\target\classes started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:47:56.375  INFO 8024 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : No active profile set, falling back to default profiles: default
+2021-03-01 16:47:56.551  INFO 8024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:47:56.561  INFO 8024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:47:56.690  INFO 8024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-01 16:47:56.690  INFO 8024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-01 16:47:56.690  INFO 8024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-01 16:47:56.720  INFO 8024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-01 16:47:56.720  INFO 8024 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 342 ms
+2021-03-01 16:47:56.757  INFO 8024 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-03-01 16:47:57.020  INFO 8024 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-03-01 16:47:57.026  INFO 8024 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:47:57.032  INFO 8024 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:47:57.155  INFO 8024 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:47:57.155  INFO 8024 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:47:57.229  WARN 8024 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:47:57.259  INFO 8024 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:47:57.317  INFO 8024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-01 16:47:57.328  INFO 8024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-01 16:47:57.333  INFO 8024 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : Started ActivityLogsAnalyticsApplication in 0.983 seconds (JVM running for 92140.412)
+2021-03-01 16:47:57.334  INFO 8024 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-01 16:47:59.313  INFO 8024 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:47:59.314  INFO 8024 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:47:59.315  INFO 8024 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-03-01 16:47:59.319  INFO 8024 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-03-01 16:47:59.388  INFO 8024 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : Starting ActivityLogsAnalyticsApplication using Java 13.0.2 on MironK-LT with PID 8024 (C:\Users\mironk\IdeaProjects\activity_logs_analytics\target\classes started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:47:59.388  INFO 8024 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : No active profile set, falling back to default profiles: default
+2021-03-01 16:47:59.572  INFO 8024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:47:59.573  INFO 14680 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Starting ActivityLogsAnalyticsApplicationTests using Java 13.0.2 on MironK-LT with PID 14680 (started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:47:59.576  INFO 14680 --- [main] .a.ActivityLogsAnalyticsApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-01 16:47:59.586  INFO 8024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:47:59.672  INFO 8024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-01 16:47:59.672  INFO 8024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-01 16:47:59.672  INFO 8024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-01 16:47:59.698  INFO 8024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-01 16:47:59.698  INFO 8024 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 308 ms
+2021-03-01 16:47:59.732  INFO 8024 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-03-01 16:48:00.030  INFO 8024 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-03-01 16:48:00.035  INFO 8024 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:48:00.041  INFO 8024 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:48:00.202  INFO 8024 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:48:00.202  INFO 8024 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:48:00.255  INFO 14680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:48:00.289  WARN 8024 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:48:00.322  INFO 8024 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:48:00.328  INFO 14680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:48:00.385  INFO 8024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-01 16:48:00.399  INFO 8024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-01 16:48:00.404  INFO 8024 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : Started ActivityLogsAnalyticsApplication in 1.042 seconds (JVM running for 92143.483)
+2021-03-01 16:48:00.406  INFO 8024 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-01 16:48:00.885  INFO 14680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:48:01.732  INFO 14680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:48:01.785  INFO 14680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:48:01.828  INFO 14680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:48:01.951  INFO 14680 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:48:02.092  INFO 14680 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:48:02.724  INFO 14680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:48:02.732  INFO 14680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:48:03.434  WARN 14680 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:48:03.635  INFO 14680 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:48:04.018  INFO 14680 --- [main] .a.ActivityLogsAnalyticsApplicationTests : Started ActivityLogsAnalyticsApplicationTests in 4.824 seconds (JVM running for 6.221)
+2021-03-01 16:48:06.203  INFO 14680 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters
+2021-03-01 16:48:06.488  INFO 14680 --- [main] c.r.a.service.ActivityLogService         : Requesting data without searching parameters. Success
+2021-03-01 16:48:06.489  INFO 14680 --- [main] c.r.a.service.ActivityLogService         : Start data preparing
+2021-03-01 16:48:06.489  INFO 14680 --- [main] c.r.a.service.ActivityLogService         : Start calculation of percents for statuses and activity types
+2021-03-01 16:48:06.490  INFO 14680 --- [main] c.r.a.service.ActivityLogService         : Finish calculation of percents
+2021-03-01 16:48:06.490  INFO 14680 --- [main] c.r.a.service.ActivityLogService         : Finish data preparing
+2021-03-01 16:48:07.372  INFO 14680 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:48:07.374  INFO 14680 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:48:07.376  INFO 14680 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-01 16:48:07.383  INFO 14680 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-01 16:50:38.232  INFO 19704 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : Starting ActivityLogsAnalyticsApplication using Java 13.0.2 on MironK-LT with PID 19704 (C:\Users\mironk\IdeaProjects\activity_logs_analytics\target\classes started by MironK in C:\Users\mironk\IdeaProjects\activity_logs_analytics)
+2021-03-01 16:50:38.234  INFO 19704 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : No active profile set, falling back to default profiles: default
+2021-03-01 16:50:38.273  INFO 19704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-01 16:50:38.273  INFO 19704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-01 16:50:38.697  INFO 19704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 16:50:38.731  INFO 19704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2021-03-01 16:50:39.139  INFO 19704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-01 16:50:39.145  INFO 19704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-01 16:50:39.145  INFO 19704 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-01 16:50:39.209  INFO 19704 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-01 16:50:39.209  INFO 19704 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 935 ms
+2021-03-01 16:50:39.296  INFO 19704 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-01 16:50:39.613  INFO 19704 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-01 16:50:39.642  INFO 19704 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-01 16:50:39.669  INFO 19704 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-01 16:50:39.742  INFO 19704 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-01 16:50:39.828  INFO 19704 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-01 16:50:40.321  INFO 19704 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-01 16:50:40.328  INFO 19704 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 16:50:40.646  WARN 19704 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 16:50:40.715  INFO 19704 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 16:50:40.883  INFO 19704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-01 16:50:41.255  INFO 19704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-01 16:50:41.263  INFO 19704 --- [restartedMain] c.r.a.ActivityLogsAnalyticsApplication   : Started ActivityLogsAnalyticsApplication in 3.306 seconds (JVM running for 4.586)
+2021-03-01 16:51:03.926  INFO 19704 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-01 16:51:03.928  INFO 19704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-01 16:51:03.929  INFO 19704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-01 16:51:03.945  INFO 19704 --- [http-nio-8080-exec-1] c.r.a.controllers.DataController         : GET /data/home FROM IP: 0:0:0:0:0:0:0:1
+2021-03-01 16:51:03.945  INFO 19704 --- [http-nio-8080-exec-1] c.r.a.controllers.DataController         : Requesting page parameters from DB
+2021-03-01 16:51:03.945  INFO 19704 --- [http-nio-8080-exec-1] c.r.a.service.ActivityLogService         : Start activity types request
+2021-03-01 16:51:04.008  INFO 19704 --- [http-nio-8080-exec-1] c.r.a.service.ActivityLogService         : Start statuses request
+2021-03-01 16:51:04.037  INFO 19704 --- [http-nio-8080-exec-1] c.r.a.controllers.DataController         : Requesting page parameters completed
+2021-03-01 16:51:10.280  INFO 19704 --- [http-nio-8080-exec-5] c.r.a.controllers.DataController         : POST /data/result FROM IP: 0:0:0:0:0:0:0:1
+2021-03-01 16:51:10.281  INFO 19704 --- [http-nio-8080-exec-5] c.r.a.controllers.DataController         : Request statuses: SUCCESS,IN_PROCESS,FAIL
+2021-03-01 16:51:10.282  INFO 19704 --- [http-nio-8080-exec-5] c.r.a.controllers.DataController         : Request activity types: 
+2021-03-01 16:51:10.282  INFO 19704 --- [http-nio-8080-exec-5] c.r.a.controllers.DataController         : Starting method getListStatus
+2021-03-01 16:51:10.282  INFO 19704 --- [http-nio-8080-exec-5] c.r.a.service.ActivityLogService         : Requesting data with searching parameters: statuses
+2021-03-01 16:51:10.569  INFO 19704 --- [http-nio-8080-exec-5] c.r.a.service.ActivityLogService         : Requesting data with searching parameters: statuses. Success
+2021-03-01 16:51:10.569  INFO 19704 --- [http-nio-8080-exec-5] c.r.a.service.ActivityLogService         : Start data preparing
+2021-03-01 16:51:10.570  INFO 19704 --- [http-nio-8080-exec-5] c.r.a.service.ActivityLogService         : Start calculation of percents for statuses and activity types
+2021-03-01 16:51:10.570  INFO 19704 --- [http-nio-8080-exec-5] c.r.a.service.ActivityLogService         : Finish calculation of percents
+2021-03-01 16:51:10.570  INFO 19704 --- [http-nio-8080-exec-5] c.r.a.service.ActivityLogService         : Finish data preparing
+2021-03-01 16:51:10.570  INFO 19704 --- [http-nio-8080-exec-5] c.r.a.controllers.DataController         : Method getListStatus completed
+2021-03-01 16:51:13.821  INFO 19704 --- [http-nio-8080-exec-6] c.r.a.controllers.DataController         : GET /data/home FROM IP: 0:0:0:0:0:0:0:1
+2021-03-01 16:51:13.821  INFO 19704 --- [http-nio-8080-exec-6] c.r.a.controllers.DataController         : Requesting page parameters from DB
+2021-03-01 16:51:13.821  INFO 19704 --- [http-nio-8080-exec-6] c.r.a.service.ActivityLogService         : Start activity types request
+2021-03-01 16:51:13.855  INFO 19704 --- [http-nio-8080-exec-6] c.r.a.service.ActivityLogService         : Start statuses request
+2021-03-01 16:51:13.884  INFO 19704 --- [http-nio-8080-exec-6] c.r.a.controllers.DataController         : Requesting page parameters completed
+2021-03-01 16:51:38.268  INFO 19704 --- [http-nio-8080-exec-10] c.r.a.controllers.DataController         : POST /data/result FROM IP: 0:0:0:0:0:0:0:1
+2021-03-01 16:51:38.269  INFO 19704 --- [http-nio-8080-exec-10] c.r.a.controllers.DataController         : Request statuses: SUCCESS,IN_PROCESS,FAIL
+2021-03-01 16:51:38.269  INFO 19704 --- [http-nio-8080-exec-10] c.r.a.controllers.DataController         : Request activity types: APPLICATION_GEO_BLOCKING_STATUS,SSL_DELETE,REFINE,USER_DELETED,DELETE_CUSTOMER,APPLICATION_UPDATE_ADVANCED_REDIRECT_RULES,IP_AFFINITY,APPLICATION_ACCESS_CONTROL_LIST,IP_REPUTATION_PROTECTION,UPDATE_ANTIBOT_CONFIGURATION,ORIGIN_PROTOCOLS,IP_GROUP_USAGE_UPDATE,APPLICATION_IPV6_CONFIGURATION
+2021-03-01 16:51:38.269  INFO 19704 --- [http-nio-8080-exec-10] c.r.a.controllers.DataController         : Starting method getListStatus
+2021-03-01 16:51:38.269  INFO 19704 --- [http-nio-8080-exec-10] c.r.a.service.ActivityLogService         : Requesting data with searching parameters: activity types, statuses
+2021-03-01 16:51:38.554  INFO 19704 --- [http-nio-8080-exec-10] c.r.a.service.ActivityLogService         : Requesting data with searching parameters: activity types, statuses. Success
+2021-03-01 16:51:38.554  INFO 19704 --- [http-nio-8080-exec-10] c.r.a.service.ActivityLogService         : Start data preparing
+2021-03-01 16:51:38.555  INFO 19704 --- [http-nio-8080-exec-10] c.r.a.service.ActivityLogService         : Start calculation of percents for statuses and activity types
+2021-03-01 16:51:38.555  INFO 19704 --- [http-nio-8080-exec-10] c.r.a.service.ActivityLogService         : Finish calculation of percents
+2021-03-01 16:51:38.555  INFO 19704 --- [http-nio-8080-exec-10] c.r.a.service.ActivityLogService         : Finish data preparing
+2021-03-01 16:51:38.555  INFO 19704 --- [http-nio-8080-exec-10] c.r.a.controllers.DataController         : Method getListStatus completed
