@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/data")
 public class DataController {
 
-    private static Logger LOGGER  = LoggerFactory.getLogger(DataController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(DataController.class);
 
     private ActivityLogService activityLogService;
 
@@ -28,17 +28,16 @@ public class DataController {
     @GetMapping("/home")
     public String home(HttpServletRequest request, Model model) {
         LOGGER.info(request.getMethod() + " " + request.getRequestURI() + " FROM IP: " + request.getRemoteAddr());
-        LOGGER.info("Requesting page parameters from DB");
+        LOGGER.debug("Requesting page parameters from DB");
 
         model.addAttribute("activityTypesArrayList", activityLogService.getListRequestParamsActivityTypes());
         model.addAttribute("statusesArrayList", activityLogService.getListRequestParamsStatuses());
 
-        LOGGER.info("Requesting page parameters completed");
+        LOGGER.debug("Requesting page parameters completed");
 
-        return "home";
+        return "home3";
 
     }
-
 
 
     @PostMapping("/result")
@@ -48,13 +47,18 @@ public class DataController {
         LOGGER.info(request.getMethod() + " " + request.getRequestURI() + " FROM IP: " + request.getRemoteAddr());
         LOGGER.info("Request statuses: " + request.getParameter("statuses"));
         LOGGER.info("Request activity types: " + request.getParameter("activityTypes"));
-        LOGGER.info("Starting method getListStatus");
+        LOGGER.info("Request startDateTime: " + request.getParameter("startDateTime"));
+        LOGGER.info("Request finishDateTime: " + request.getParameter("finishDateTime"));
+        LOGGER.debug("Starting method getListStatus");
 
 
-        model.addAttribute("results", activityLogService.getListStatus(request.getParameter("statuses"),
-                request.getParameter("activityTypes")));
+        model.addAttribute("results", activityLogService.getListStatus(
+                request.getParameter("statuses"),
+                request.getParameter("activityTypes"),
+                request.getParameter("startDateTime"),
+                request.getParameter("finishDateTime")));
 
-        LOGGER.info("Method getListStatus completed");
+        LOGGER.debug("Method getListStatus completed");
 
         return "result";
 

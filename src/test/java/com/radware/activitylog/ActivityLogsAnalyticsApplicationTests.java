@@ -11,12 +11,18 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 @SpringBootTest
 class ActivityLogsAnalyticsApplicationTests {
+
+    private static final Timestamp TIMESTART = Timestamp.valueOf(LocalDateTime.parse("2000-01-01T00:00"));
+    private static final Timestamp TIMEFINISH = Timestamp.valueOf(LocalDateTime.parse("2025-01-01T00:00"));
+    private static final Random RANDOM = new Random();
 
     @Autowired
     private ActivityLogService activityLogService;
@@ -43,14 +49,13 @@ class ActivityLogsAnalyticsApplicationTests {
 
     @Test
     public void checkPreparedWithParamsQuery() {
-        Random random = new Random();
         // take actual statuses list
         ArrayList<String> statusesArrayList = activityLogRepository.statusesRequest();
         int a = statusesArrayList.size();
 
         // put random status in statuses list for query
         ArrayList<String> statuses = new ArrayList<>();
-        statuses.add(statusesArrayList.get(random.nextInt(a)));
+        statuses.add(statusesArrayList.get(RANDOM.nextInt(a)));
 
         // take list entities from DB with previously generated random status
         List<UserActivityLogEntity> userActivityLogEntityList  = activityLogRepository.findByStatus(statuses.get(0));
@@ -58,9 +63,9 @@ class ActivityLogsAnalyticsApplicationTests {
 
         // put random activity type in statuses list for query
         ArrayList<String> activityTypes = new ArrayList<>();
-        activityTypes.add(userActivityLogEntityList.get(random.nextInt(b)).getActivityType());
+        activityTypes.add(userActivityLogEntityList.get(RANDOM.nextInt(b)).getActivityType());
 
-        List<DataPrepared> dataPreparedList = activityLogRepository.customPreparedWithParams(statuses, activityTypes);
+        List<DataPrepared> dataPreparedList = activityLogRepository.customPreparedWithParams(statuses, activityTypes, TIMESTART, TIMEFINISH);
         Assertions.assertEquals(dataPreparedList.size(), 1);
         Assertions.assertTrue(dataPreparedList.get(0).getCount() > 0);
         Assertions.assertTrue(dataPreparedList.get(0).getStatus().equals(statuses.get(0)));
@@ -71,16 +76,14 @@ class ActivityLogsAnalyticsApplicationTests {
 
     @Test
     public void checkPreparedWithStatusesQuery() {
-        Random random = new Random();
-        // take actual statuses list
         ArrayList<String> statusesArrayList = activityLogRepository.statusesRequest();
         int a = statusesArrayList.size();
 
         // put random status in statuses list for query
         ArrayList<String> statuses = new ArrayList<>();
-        statuses.add(statusesArrayList.get(random.nextInt(a)));
+        statuses.add(statusesArrayList.get(RANDOM.nextInt(a)));
 
-        List<DataPrepared> dataPreparedList = activityLogRepository.customPreparedWithStatuses(statuses);
+        List<DataPrepared> dataPreparedList = activityLogRepository.customPreparedWithStatuses(statuses, TIMESTART, TIMEFINISH);
         Assertions.assertTrue(dataPreparedList.size() > 0);
         Assertions.assertTrue(dataPreparedList.get(0).getCount() > 0);
         Assertions.assertTrue(dataPreparedList.get(0).getStatus().equals(statuses.get(0)));
@@ -90,16 +93,14 @@ class ActivityLogsAnalyticsApplicationTests {
 
     @Test
     public void checkPreparedWithActivityTypesQuery() {
-        Random random = new Random();
-        // take actual activity types list
         ArrayList<String> activityTypesArrayList = activityLogRepository.activityTypesRequest();
         int a = activityTypesArrayList.size();
 
         // put random status in statuses list for query
         ArrayList<String> activityTypes = new ArrayList<>();
-        activityTypes.add(activityTypesArrayList.get(random.nextInt(a)));
+        activityTypes.add(activityTypesArrayList.get(RANDOM.nextInt(a)));
 
-        List<DataPrepared> dataPreparedList = activityLogRepository.customPreparedWithActivityTypes(activityTypes);
+        List<DataPrepared> dataPreparedList = activityLogRepository.customPreparedWithActivityTypes(activityTypes, TIMESTART, TIMEFINISH);
         Assertions.assertTrue(dataPreparedList.size() > 0);
         Assertions.assertTrue(dataPreparedList.get(0).getCount() > 0);
         Assertions.assertTrue(dataPreparedList.get(0).getActivityType().equals(activityTypes.get(0)));
@@ -114,9 +115,9 @@ class ActivityLogsAnalyticsApplicationTests {
         ArrayList<String> statuses = activityLogRepository.statusesRequest();
         ArrayList<String> activityTypes = activityLogRepository.activityTypesRequest();
 
-        List<DataPrepared> dataPreparedListStatuses = activityLogRepository.customPreparedWithStatuses(statuses);
-        List<DataPrepared> dataPreparedListActivityTypes = activityLogRepository.customPreparedWithActivityTypes(activityTypes);
-        List<DataPrepared> dataPreparedList = activityLogRepository.customPreparedWithoutParams();
+        List<DataPrepared> dataPreparedListStatuses = activityLogRepository.customPreparedWithStatuses(statuses, TIMESTART, TIMEFINISH);
+        List<DataPrepared> dataPreparedListActivityTypes = activityLogRepository.customPreparedWithActivityTypes(activityTypes, TIMESTART, TIMEFINISH);
+        List<DataPrepared> dataPreparedList = activityLogRepository.customPreparedWithoutParams(TIMESTART, TIMEFINISH);
 
         Assertions.assertEquals(dataPreparedList.size(), dataPreparedListStatuses.size());
         Assertions.assertEquals(dataPreparedList.size(), dataPreparedListActivityTypes.size());
@@ -148,7 +149,7 @@ class ActivityLogsAnalyticsApplicationTests {
         double countStatuses = 0;
         double countActivityTypes;
 
-        List<Status> statusList = activityLogService.getListStatus("","");
+        List<Status> statusList = activityLogService.getListStatus("","", "2000-01-01T00:00", "2025-01-01T00:00");
         for (Status status : statusList) {
             countStatuses = countStatuses +  status.getSt_percent();
             countActivityTypes = 0;
