@@ -151,10 +151,10 @@ class ActivityLogsAnalyticsApplicationTests {
 
         List<Status> statusList = activityLogService.getListStatus("","", "2000-01-01T00:00", "2025-01-01T00:00");
         for (Status status : statusList) {
-            countStatuses = countStatuses +  status.getSt_percent();
+            countStatuses = countStatuses +  status.getStPercent();
             countActivityTypes = 0;
-            for (ActivityType activityType : status.getAt_list()){
-                countActivityTypes = countActivityTypes + activityType.getAt_percent();
+            for (ActivityType activityType : status.getAtList()){
+                countActivityTypes = countActivityTypes + activityType.getAtPercent();
             }
             Assertions.assertEquals((int) Math.round(countActivityTypes), 100);
         }

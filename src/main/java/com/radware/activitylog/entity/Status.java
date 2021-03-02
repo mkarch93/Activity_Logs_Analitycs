@@ -5,24 +5,24 @@ import java.util.ArrayList;
 public class Status {
 
     private String stName;
-    private double st_count;
-    private ArrayList<ActivityType> at_list;
-    private double st_percent;
+    private double stCount;
+    private ArrayList<ActivityType> atList;
+    private double stPercent;
 
-    public ArrayList<ActivityType> getAt_list() {
-        return at_list;
+    public ArrayList<ActivityType> getAtList() {
+        return atList;
     }
 
-    public void setAt_list(ArrayList<ActivityType> at_list) {
-        this.at_list = at_list;
+    public void setAtList(ArrayList<ActivityType> atList) {
+        this.atList = atList;
     }
 
     public Status(){}
 
-    public Status(String stName, double st_count, ArrayList<ActivityType> at_list) {
+    public Status(String stName, double stCount, ArrayList<ActivityType> atList) {
         this.stName = stName;
-        this.st_count = st_count;
-        this.at_list = at_list;
+        this.stCount = stCount;
+        this.atList = atList;
     }
 
     public String getStName() {
@@ -33,29 +33,29 @@ public class Status {
         this.stName = stName;
     }
 
-    public double getSt_count() {
-        return st_count;
+    public double getStCount() {
+        return stCount;
     }
 
-    public void setSt_count(double st_count) {
-        this.st_count = st_count;
+    public void setStCount(double stCount) {
+        this.stCount = stCount;
     }
 
-    public double getSt_percent() {
-        return st_percent;
+    public double getStPercent() {
+        return stPercent;
     }
 
-    public void setSt_percent(double st_percent) {
-        this.st_percent = st_percent;
+    public void setStPercent(double stPercent) {
+        this.stPercent = stPercent;
     }
 
     @Override
     public String toString() {
         return "Status{" +
                 "st_name='" + stName + '\'' +
-                ", st_count=" + st_count +
-                ", at_list=" + at_list +
-                ", st_percent=" + st_percent +
+                ", st_count=" + stCount +
+                ", at_list=" + atList +
+                ", st_percent=" + stPercent +
                 '}';
     }
 }
