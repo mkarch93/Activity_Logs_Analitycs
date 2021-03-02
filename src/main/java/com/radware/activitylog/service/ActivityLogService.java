@@ -4,9 +4,13 @@ import com.radware.activitylog.dao.ActivityLogRepository;
 import com.radware.activitylog.entity.ActivityType;
 import com.radware.activitylog.entity.DataPrepared;
 import com.radware.activitylog.entity.Status;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -14,6 +18,7 @@ import java.util.List;
 @Service
 public class ActivityLogService {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(ActivityLogService.class);
 
     public ActivityLogService() {
     }
@@ -26,14 +31,44 @@ public class ActivityLogService {
     }
 
 
-    public List<Status> getListStatus(String statusesString, String activityTypesString) {
-        String[] arrayStatuses = statusesString.split(", ");
+    public List<Status> getListStatus(String statusesString, String activityTypesString,
+                                      String startDateTime, String finishDateTime) {
+
+        Timestamp timeStart = Timestamp.valueOf(LocalDateTime.parse(startDateTime));
+        Timestamp timeFinish = Timestamp.valueOf(LocalDateTime.parse(finishDateTime));
+
+        String[] arrayStatuses = statusesString.split(",");
         ArrayList<String> statuses = new ArrayList<>(Arrays.asList(arrayStatuses));
 
-        String[] arrayActivities = activityTypesString.split(", ");
+        String[] arrayActivities = activityTypesString.split(",");
         ArrayList<String> activityTypes = new ArrayList<>(Arrays.asList(arrayActivities));
 
-        List<DataPrepared> dataPreparedList = activityLogRepository.customPreparedWithParams(statuses, activityTypes);
+
+        List<DataPrepared> dataPreparedList;
+        if (statusesString.isEmpty() && activityTypesString.isEmpty()) {
+            LOGGER.debug("Requesting data without searching parameters");
+            dataPreparedList = activityLogRepository.customPreparedWithoutParams(timeStart, timeFinish);
+            statuses = activityLogRepository.statusesRequest();
+            LOGGER.debug("Requesting data without searching parameters. Success");
+        } else if (statusesString.isEmpty()) {
+            LOGGER.debug("Requesting data with searching parameters: activity types");
+            dataPreparedList = activityLogRepository.customPreparedWithActivityTypes(activityTypes, timeStart, timeFinish);
+            statuses = activityLogRepository.statusesRequest();
+            LOGGER.debug("Requesting data with searching parameters: activity types. Success");
+
+        } else if (activityTypesString.isEmpty()) {
+            LOGGER.debug("Requesting data with searching parameters: statuses");
+            dataPreparedList = activityLogRepository.customPreparedWithStatuses(statuses, timeStart, timeFinish);
+            LOGGER.debug("Requesting data with searching parameters: statuses. Success");
+
+        } else {
+            LOGGER.debug("Requesting data with searching parameters: activity types, statuses");
+            dataPreparedList = activityLogRepository.customPreparedWithParams(statuses, activityTypes, timeStart, timeFinish);
+            LOGGER.debug("Requesting data with searching parameters: activity types, statuses. Success");
+
+        }
+
+        LOGGER.debug("Start data preparing");
         List<Status> resultList = new ArrayList<>();
         for (String s : statuses) {
             double tempCount = 0;
@@ -48,11 +83,13 @@ public class ActivityLogService {
             resultList.add(new Status(s, tempCount, tempList));
         }
         getListWithPercent(resultList);
+        LOGGER.debug("Finish data preparing");
         return resultList;
-
     }
 
     public void getListWithPercent(List<Status> statusList) {
+        LOGGER.debug("Start calculation of percents for statuses and activity types");
+
         double countAllStatus = 0;
         for (Status status : statusList) {
             countAllStatus += status.getSt_count();
@@ -64,5 +101,19 @@ public class ActivityLogService {
                 activityType.setAt_percent(activityType.getAt_count() / status.getSt_count() * 100);
             }
         }
+        LOGGER.debug("Finish calculation of percents");
+
     }
+
+    public ArrayList<String> getListRequestParamsStatuses() {
+        LOGGER.debug("Start statuses request");
+        return activityLogRepository.statusesRequest();
+
+    }
+
+    public ArrayList<String> getListRequestParamsActivityTypes() {
+        LOGGER.debug("Start activity types request");
+        return activityLogRepository.activityTypesRequest();
+    }
+
 }

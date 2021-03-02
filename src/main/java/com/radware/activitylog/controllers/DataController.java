@@ -2,17 +2,22 @@ package com.radware.activitylog.controllers;
 
 
 import com.radware.activitylog.service.ActivityLogService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.servlet.http.HttpServletRequest;
 
 
 @Controller
 @RequestMapping("/data")
 public class DataController {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(DataController.class);
 
     private ActivityLogService activityLogService;
 
@@ -21,22 +26,39 @@ public class DataController {
     }
 
     @GetMapping("/home")
-    public String home() {
+    public String home(HttpServletRequest request, Model model) {
+        LOGGER.info(request.getMethod() + " " + request.getRequestURI() + " FROM IP: " + request.getRemoteAddr());
+        LOGGER.debug("Requesting page parameters from DB");
 
-        System.out.println("home");
+        model.addAttribute("activityTypesArrayList", activityLogService.getListRequestParamsActivityTypes());
+        model.addAttribute("statusesArrayList", activityLogService.getListRequestParamsStatuses());
 
-        return "home";
+        LOGGER.debug("Requesting page parameters completed");
+
+        return "home3";
 
     }
 
-    @GetMapping("/result")
-    public String result(@RequestParam(value = "statuses", required = false) String statuses,
-                         @RequestParam(value = "activity_types", required = false) String activity_types,
-                         Model model) {
-        System.out.println("result statuses: " + statuses);
-        System.out.println("result activity_types: " + activity_types);
 
-        model.addAttribute("results", activityLogService.getListStatus(statuses, activity_types));
+    @PostMapping("/result")
+    public String result(HttpServletRequest request,
+                         Model model) {
+
+        LOGGER.info(request.getMethod() + " " + request.getRequestURI() + " FROM IP: " + request.getRemoteAddr());
+        LOGGER.info("Request statuses: " + request.getParameter("statuses"));
+        LOGGER.info("Request activity types: " + request.getParameter("activityTypes"));
+        LOGGER.info("Request startDateTime: " + request.getParameter("startDateTime"));
+        LOGGER.info("Request finishDateTime: " + request.getParameter("finishDateTime"));
+        LOGGER.debug("Starting method getListStatus");
+
+
+        model.addAttribute("results", activityLogService.getListStatus(
+                request.getParameter("statuses"),
+                request.getParameter("activityTypes"),
+                request.getParameter("startDateTime"),
+                request.getParameter("finishDateTime")));
+
+        LOGGER.debug("Method getListStatus completed");
 
         return "result";
 
