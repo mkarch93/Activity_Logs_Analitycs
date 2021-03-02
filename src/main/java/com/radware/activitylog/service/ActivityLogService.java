@@ -55,13 +55,13 @@ public class ActivityLogService {
     public void getListWithPercent(List<Status> statusList) {
         double countAllStatus = 0;
         for (Status status : statusList) {
-            countAllStatus += status.getSt_count();
+            countAllStatus += status.getStCount();
         }
 
         for (Status status : statusList) {
-            status.setSt_percent(status.getSt_count() / countAllStatus * 100);
-            for (ActivityType activityType : status.getAt_list()) {
-                activityType.setAt_percent(activityType.getAt_count() / status.getSt_count() * 100);
+            status.setStPercent(status.getStCount() / countAllStatus * 100);
+            for (ActivityType activityType : status.getAtList()) {
+                activityType.setAtPercent(activityType.getAtCount() / status.getStCount() * 100);
             }
         }
     }

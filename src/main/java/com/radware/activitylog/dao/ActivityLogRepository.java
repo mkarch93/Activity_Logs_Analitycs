@@ -1,7 +1,7 @@
 package com.radware.activitylog.dao;
 
-import com.radware.activitylog.entity.UserActivityLogEntity;
 import com.radware.activitylog.entity.DataPrepared;
+import com.radware.activitylog.entity.UserActivityLogEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
