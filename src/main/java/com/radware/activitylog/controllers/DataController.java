@@ -1,6 +1,7 @@
 package com.radware.activitylog.controllers;
 
 
+import com.radware.activitylog.entity.Status;
 import com.radware.activitylog.service.ActivityLogService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Controller
@@ -18,6 +21,8 @@ import javax.servlet.http.HttpServletRequest;
 public class DataController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DataController.class);
+    public static List<Status> statusList = new ArrayList<>();
+
 
     private ActivityLogService activityLogService;
 
@@ -41,8 +46,7 @@ public class DataController {
 
 
     @PostMapping("/result")
-    public String result(HttpServletRequest request,
-                         Model model) {
+    public String result(HttpServletRequest request) {
 
         LOGGER.info(request.getMethod() + " " + request.getRequestURI() + " FROM IP: " + request.getRemoteAddr());
         LOGGER.info("Request statuses: " + request.getParameter("statuses"));
@@ -51,16 +55,15 @@ public class DataController {
         LOGGER.info("Request finishDateTime: " + request.getParameter("finishDateTime"));
         LOGGER.debug("Starting method getListStatus");
 
-
-        model.addAttribute("results", activityLogService.getListStatus(
+        statusList = activityLogService.getListStatus(
                 request.getParameter("statuses"),
                 request.getParameter("activityTypes"),
                 request.getParameter("startDateTime"),
-                request.getParameter("finishDateTime")));
+                request.getParameter("finishDateTime"));
 
         LOGGER.debug("Method getListStatus completed");
 
-        return "result";
+        return "pieChart";
 
     }
 
