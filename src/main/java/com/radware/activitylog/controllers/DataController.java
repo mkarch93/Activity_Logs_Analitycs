@@ -1,10 +1,10 @@
 package com.radware.activitylog.controllers;
 
 
-import com.radware.activitylog.entity.Status;
 import com.radware.activitylog.service.ActivityLogService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.List;
 
 
 @Controller
@@ -21,14 +19,11 @@ import java.util.List;
 public class DataController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DataController.class);
-    public static List<Status> statusList = new ArrayList<>();
 
-
+    @Autowired
     private ActivityLogService activityLogService;
-
-    public DataController(ActivityLogService service) {
-        this.activityLogService = service;
-    }
+    @Autowired
+    private JsonRestController jsonRestController;
 
     @GetMapping("/home")
     public String home(HttpServletRequest request, Model model) {
@@ -40,7 +35,7 @@ public class DataController {
 
         LOGGER.debug("Requesting page parameters completed");
 
-        return "home3";
+        return "home";
 
     }
 
@@ -55,11 +50,11 @@ public class DataController {
         LOGGER.info("Request finishDateTime: " + request.getParameter("finishDateTime"));
         LOGGER.debug("Starting method getListStatus");
 
-        statusList = activityLogService.getListStatus(
+        jsonRestController.setStatusList(activityLogService.getListStatus(
                 request.getParameter("statuses"),
                 request.getParameter("activityTypes"),
                 request.getParameter("startDateTime"),
-                request.getParameter("finishDateTime"));
+                request.getParameter("finishDateTime")));
 
         LOGGER.debug("Method getListStatus completed");
 

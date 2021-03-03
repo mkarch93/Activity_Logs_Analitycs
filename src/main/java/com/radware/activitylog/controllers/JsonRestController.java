@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -14,13 +15,18 @@ import java.util.List;
 public class JsonRestController {
 
 
+    private List<Status> statusList = new ArrayList<>();
+
+
     @GetMapping("/json")
     public List<Status> getStatuses()
     {
-        return DataController.statusList;
+       // return DataController.statusList;
+        return statusList;
     }
 
 
-
-
+    public void setStatusList(List<Status> statusList) {
+        this.statusList = statusList;
+    }
 }
