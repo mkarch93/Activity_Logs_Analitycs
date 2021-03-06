@@ -5,6 +5,7 @@ import com.radware.activitylog.entity.UserActivityLogEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -45,6 +46,7 @@ public interface ActivityLogRepository extends JpaRepository<UserActivityLogEnti
             "FROM UserActivityLogEntity d WHERE  d.startDate BETWEEN (:startDateTime) AND (:finishDateTime) group by 1,2")
     List<DataPrepared> customPreparedWithoutParams(@Param("startDateTime") Timestamp startDateTime,
                                                    @Param("finishDateTime") Timestamp finishDateTime);
+//    JdbcTemplate
 
     @Query("SELECT d.status FROM UserActivityLogEntity d group by 1")
     ArrayList<String> statusesRequest();

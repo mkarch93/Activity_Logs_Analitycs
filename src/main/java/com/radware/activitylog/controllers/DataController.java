@@ -1,6 +1,7 @@
 package com.radware.activitylog.controllers;
 
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.radware.activitylog.service.ActivityLogService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,13 +36,16 @@ public class DataController {
 
         LOGGER.debug("Requesting page parameters completed");
 
-        return "home";
+        return "home4";
 
     }
 
 
     @PostMapping("/result")
     public String result(HttpServletRequest request) {
+
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        objectMapper.ad(string, dumm.class)
 
         LOGGER.info(request.getMethod() + " " + request.getRequestURI() + " FROM IP: " + request.getRemoteAddr());
         LOGGER.info("Request statuses: " + request.getParameter("statuses"));
