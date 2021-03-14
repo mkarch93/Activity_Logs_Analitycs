@@ -36,11 +36,10 @@ public class DataController {
         LOGGER.debug("Requesting page parameters completed");
 
         return "home";
-
     }
 
 
-    @PostMapping("/result")
+    /*@PostMapping("/result")
     public String result(HttpServletRequest request) {
 
         LOGGER.info(request.getMethod() + " " + request.getRequestURI() + " FROM IP: " + request.getRemoteAddr());
@@ -60,6 +59,6 @@ public class DataController {
 
         return "pieChart";
 
-    }
+    }*/
 
 }

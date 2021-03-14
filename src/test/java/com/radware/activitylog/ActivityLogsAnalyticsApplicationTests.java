@@ -144,8 +144,8 @@ class ActivityLogsAnalyticsApplicationTests {
         Assertions.assertEquals(coincidenceCounter, dataPreparedListActivityTypes.size());
     }
 
-    @Test
-    public void checkGetListStatusCalculations() {
+   /* @Test
+   *//* public void checkGetListStatusCalculations() {
         double countStatuses = 0;
         double countActivityTypes;
 
@@ -161,6 +161,6 @@ class ActivityLogsAnalyticsApplicationTests {
         Assertions.assertEquals((int) Math.round(countStatuses), 100);
 
 
-    }
+    }*/
 
 }
