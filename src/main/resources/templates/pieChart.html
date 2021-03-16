@@ -10,7 +10,7 @@
 
         const requestURL = 'http://localhost:8080/api/json';
         const request = new XMLHttpRequest();
-        request.open('GET', requestURL);
+        request.open('POST', requestURL);
         request.responseType = 'json';
         request.send();
         request.onload = function() {

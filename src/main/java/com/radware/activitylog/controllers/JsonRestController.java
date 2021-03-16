@@ -3,6 +3,7 @@ package com.radware.activitylog.controllers;
 
 import com.radware.activitylog.entity.Status;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,10 +19,9 @@ public class JsonRestController {
     private List<Status> statusList = new ArrayList<>();
 
 
-    @GetMapping("/json")
+    @PostMapping("/json")
     public List<Status> getStatuses()
     {
-       // return DataController.statusList;
         return statusList;
     }
 
