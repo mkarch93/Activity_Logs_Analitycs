@@ -144,12 +144,12 @@ class ActivityLogsAnalyticsApplicationTests {
         Assertions.assertEquals(coincidenceCounter, dataPreparedListActivityTypes.size());
     }
 
-    @Test
-    public void checkGetListStatusCalculations() {
+   @Test
+   public void checkGetListStatusCalculations() {
         double countStatuses = 0;
         double countActivityTypes;
 
-        List<Status> statusList = activityLogService.getListStatus("","", "2000-01-01T00:00", "2025-01-01T00:00");
+        List<Status> statusList = activityLogService.getListStatus(new ArrayList<>(),new ArrayList<>(), "2000-01-01T00:00", "2025-01-01T00:00");
         for (Status status : statusList) {
             countStatuses = countStatuses +  status.getStPercent();
             countActivityTypes = 0;
