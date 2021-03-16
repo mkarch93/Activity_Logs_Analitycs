@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -31,45 +30,40 @@ public class ActivityLogService {
     }
 
 
-    public List<Status> getListStatus(String statusesString, String activityTypesString,
+    public List<Status> getListStatus(ArrayList<String> statuses, ArrayList<String> activityTypes,
                                       String startDateTime, String finishDateTime) {
 
         Timestamp timeStart = Timestamp.valueOf(LocalDateTime.parse(startDateTime));
         Timestamp timeFinish = Timestamp.valueOf(LocalDateTime.parse(finishDateTime));
 
-        String[] arrayStatuses = statusesString.split(",");
-        ArrayList<String> statuses = new ArrayList<>(Arrays.asList(arrayStatuses));
-
-        String[] arrayActivities = activityTypesString.split(",");
-        ArrayList<String> activityTypes = new ArrayList<>(Arrays.asList(arrayActivities));
-
 
         List<DataPrepared> dataPreparedList;
-        if (statusesString.isEmpty() && activityTypesString.isEmpty()) {
+        if (statuses.isEmpty() && activityTypes.isEmpty()) {
             LOGGER.debug("Requesting data without searching parameters");
             dataPreparedList = activityLogRepository.customPreparedWithoutParams(timeStart, timeFinish);
             statuses = activityLogRepository.statusesRequest();
             LOGGER.debug("Requesting data without searching parameters. Success");
-        } else if (statusesString.isEmpty()) {
+        } else if (statuses.isEmpty()) {
             LOGGER.debug("Requesting data with searching parameters: activity types");
             dataPreparedList = activityLogRepository.customPreparedWithActivityTypes(activityTypes, timeStart, timeFinish);
             statuses = activityLogRepository.statusesRequest();
             LOGGER.debug("Requesting data with searching parameters: activity types. Success");
 
-        } else if (activityTypesString.isEmpty()) {
+        } else if (activityTypes.isEmpty()) {
             LOGGER.debug("Requesting data with searching parameters: statuses");
             dataPreparedList = activityLogRepository.customPreparedWithStatuses(statuses, timeStart, timeFinish);
             LOGGER.debug("Requesting data with searching parameters: statuses. Success");
 
-        } else {
+        }
+        else {
             LOGGER.debug("Requesting data with searching parameters: activity types, statuses");
             dataPreparedList = activityLogRepository.customPreparedWithParams(statuses, activityTypes, timeStart, timeFinish);
             LOGGER.debug("Requesting data with searching parameters: activity types, statuses. Success");
-
         }
 
         LOGGER.debug("Start data preparing");
         List<Status> resultList = new ArrayList<>();
+
         for (String s : statuses) {
             double tempCount = 0;
             ArrayList<ActivityType> tempList = new ArrayList<>();
@@ -78,14 +72,18 @@ public class ActivityLogService {
                     tempCount += dataPrepared.getCount();
                     tempList.add(new ActivityType(dataPrepared.getActivityType(), dataPrepared.getCount()));
                 }
-
             }
             resultList.add(new Status(s, tempCount, tempList));
         }
+
         getListWithPercent(resultList);
         LOGGER.debug("Finish data preparing");
         return resultList;
     }
+
+
+
+
 
     public void getListWithPercent(List<Status> statusList) {
         LOGGER.debug("Start calculation of percents for statuses and activity types");

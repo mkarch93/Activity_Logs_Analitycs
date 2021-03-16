@@ -58,6 +58,8 @@ public class Status {
                 ", st_percent=" + stPercent +
                 '}';
     }
+
+
 }
 
 
