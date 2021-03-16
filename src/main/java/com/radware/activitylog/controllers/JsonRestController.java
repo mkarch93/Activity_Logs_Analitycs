@@ -1,15 +1,14 @@
 package com.radware.activitylog.controllers;
 
-
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.radware.activitylog.entity.Input;
 import com.radware.activitylog.entity.Status;
 import com.radware.activitylog.service.ActivityLogService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -18,30 +17,25 @@ import java.util.List;
 public class JsonRestController {
 
 
-    private List<Status> statusList = new ArrayList<>();
-
-    @Autowired
     private ActivityLogService activityLogService;
 
-    @GetMapping("/json")
-    public List<Status> getStatuses()
+    @Autowired
+    public JsonRestController(ActivityLogService theActivityLogService) {
+        activityLogService = theActivityLogService;
+    }
+
+
+    @PostMapping("/json")
+    public List<Status> getStatusesTest(@RequestBody Input input)
     {
-       // return DataController.statusList;
-        return statusList;
-    }
-
-    @PostMapping("/test")
-    public List<Status> getStatusesTest(@RequestBody Input input) throws JsonProcessingException
-    {
-
-        return activityLogService.getListStatus(input.getStInputList(),input.getAtInputList(),input.getDateTime().get(0),input.getDateTime().get(1));
-        //ObjectMapper mapper = new ObjectMapper();
-        //String jsonString = mapper.writeValueAsString(input);
+        System.out.println(input.getActivityTypes());
+        System.out.println(input.getStatuses());
+        String time1 = input.getDateTime().get(0).substring(0, input.getDateTime().get(0).length()-8);
+        String time2 = input.getDateTime().get(1).substring(0, input.getDateTime().get(1).length()-8);
+        System.out.println(time1);
+        System.out.println(time2);
+        return activityLogService.getListStatus(input.getStatuses(),input.getActivityTypes(),time1,time2);
 
     }
 
-
-    public void setStatusList(List<Status> statusList) {
-        this.statusList = statusList;
-    }
 }
