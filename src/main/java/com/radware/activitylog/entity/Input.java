@@ -1,5 +1,7 @@
 package com.radware.activitylog.entity;
 
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class Input {
@@ -7,7 +9,7 @@ public class Input {
 
         private ArrayList<String> activityTypes;
         private ArrayList<String> statuses;
-        private ArrayList<String> dateTime;
+        private ArrayList<Timestamp> dateTime;
 
 
         public ArrayList<String> getActivityTypes() {
@@ -26,13 +28,18 @@ public class Input {
                 this.statuses = statuses;
         }
 
-        public ArrayList<String> getDateTime() {
-                return dateTime;
-        }
 
         public void setDateTime(ArrayList<String> dateTime) {
-                this.dateTime = dateTime;
+
+            ArrayList<Timestamp> tmp = new ArrayList<>();
+
+            for (String dt : dateTime) {
+                tmp.add(Timestamp.valueOf(LocalDateTime.parse(dt.substring(0, dt.length() - 8))));
+            }
+                this.dateTime = tmp;
         }
 
-
+        public ArrayList<Timestamp> getDateTime() {
+                return dateTime;
+        }
 }

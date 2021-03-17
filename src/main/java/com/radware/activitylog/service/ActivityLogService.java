@@ -3,6 +3,7 @@ package com.radware.activitylog.service;
 import com.radware.activitylog.dao.ActivityLogRepository;
 import com.radware.activitylog.entity.ActivityType;
 import com.radware.activitylog.entity.DataPrepared;
+import com.radware.activitylog.entity.Input;
 import com.radware.activitylog.entity.Status;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,11 +31,13 @@ public class ActivityLogService {
     }
 
 
-    public List<Status> getListStatus(ArrayList<String> statuses, ArrayList<String> activityTypes,
-                                      String startDateTime, String finishDateTime) {
+    public List<Status> getListStatus(Input input) {
 
-        Timestamp timeStart = Timestamp.valueOf(LocalDateTime.parse(startDateTime));
-        Timestamp timeFinish = Timestamp.valueOf(LocalDateTime.parse(finishDateTime));
+        ArrayList<String> statuses = input.getStatuses();
+        ArrayList<String> activityTypes = input.getActivityTypes();
+
+        Timestamp timeStart = input.getDateTime().get(0);
+        Timestamp timeFinish = input.getDateTime().get(1);
 
 
         List<DataPrepared> dataPreparedList;

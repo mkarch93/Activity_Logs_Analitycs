@@ -3,6 +3,8 @@ package com.radware.activitylog.controllers;
 import com.radware.activitylog.entity.Input;
 import com.radware.activitylog.entity.Status;
 import com.radware.activitylog.service.ActivityLogService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +19,8 @@ import java.util.List;
 public class JsonRestController {
 
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(DataController.class);
+
     private ActivityLogService activityLogService;
 
     @Autowired
@@ -28,13 +32,13 @@ public class JsonRestController {
     @PostMapping("/json")
     public List<Status> getStatusesTest(@RequestBody Input input)
     {
-        System.out.println(input.getActivityTypes());
-        System.out.println(input.getStatuses());
-        String time1 = input.getDateTime().get(0).substring(0, input.getDateTime().get(0).length()-8);
-        String time2 = input.getDateTime().get(1).substring(0, input.getDateTime().get(1).length()-8);
-        System.out.println(time1);
-        System.out.println(time2);
-        return activityLogService.getListStatus(input.getStatuses(),input.getActivityTypes(),time1,time2);
+
+        LOGGER.info("Statuses: " + input.getStatuses());
+        LOGGER.info("Activity Types: " + input.getActivityTypes());
+        LOGGER.info("Start Date Time: " + input.getDateTime().get(0));
+        LOGGER.info("End Date Time: " + input.getDateTime().get(1));
+
+        return activityLogService.getListStatus(input);
 
     }
 
