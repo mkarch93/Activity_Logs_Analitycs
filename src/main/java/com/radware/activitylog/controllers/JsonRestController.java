@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 
@@ -29,14 +30,14 @@ public class JsonRestController {
     }
 
 
-    @PostMapping("/json")
+    @PostMapping("/chart")
     public List<Status> getStatusesTest(@RequestBody Input input)
     {
 
         LOGGER.info("Statuses: " + input.getStatuses());
         LOGGER.info("Activity Types: " + input.getActivityTypes());
-        LOGGER.info("Start Date Time: " + input.getDateTime().get(0));
-        LOGGER.info("End Date Time: " + input.getDateTime().get(1));
+        LOGGER.info("Start Date Time: " + input.getStartDateTime());
+        LOGGER.info("End Date Time: " + input.getFinishDateTime());
 
         return activityLogService.getListStatus(input);
 

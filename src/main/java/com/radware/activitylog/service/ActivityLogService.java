@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,11 +32,11 @@ public class ActivityLogService {
 
     public List<Status> getListStatus(Input input) {
 
-        ArrayList<String> statuses = input.getStatuses();
-        ArrayList<String> activityTypes = input.getActivityTypes();
+        List<String> statuses = input.getStatuses();
+        List<String> activityTypes = input.getActivityTypes();
+        LocalDateTime timeStart = input.getStartDateTime();
+        LocalDateTime timeFinish = input.getFinishDateTime();
 
-        Timestamp timeStart = input.getDateTime().get(0);
-        Timestamp timeFinish = input.getDateTime().get(1);
 
 
         List<DataPrepared> dataPreparedList;
@@ -56,7 +55,6 @@ public class ActivityLogService {
             LOGGER.debug("Requesting data with searching parameters: statuses");
             dataPreparedList = activityLogRepository.customPreparedWithStatuses(statuses, timeStart, timeFinish);
             LOGGER.debug("Requesting data with searching parameters: statuses. Success");
-
         }
         else {
             LOGGER.debug("Requesting data with searching parameters: activity types, statuses");

@@ -1,17 +1,13 @@
 package com.radware.activitylog;
 
 import com.radware.activitylog.dao.ActivityLogRepository;
-import com.radware.activitylog.entity.ActivityType;
-import com.radware.activitylog.entity.DataPrepared;
-import com.radware.activitylog.entity.Status;
-import com.radware.activitylog.entity.UserActivityLogEntity;
+import com.radware.activitylog.entity.*;
 import com.radware.activitylog.service.ActivityLogService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,16 +16,17 @@ import java.util.Random;
 @SpringBootTest
 class ActivityLogsAnalyticsApplicationTests {
 
-    private static final Timestamp TIMESTART = Timestamp.valueOf(LocalDateTime.parse("2000-01-01T00:00"));
-    private static final Timestamp TIMEFINISH = Timestamp.valueOf(LocalDateTime.parse("2025-01-01T00:00"));
+
+    private static final LocalDateTime TIMESTART = LocalDateTime.parse("2000-01-01T00:00:00.001");
+    private static final LocalDateTime TIMEFINISH = LocalDateTime.parse("2025-01-01T00:00:00.001");
     private static final Random RANDOM = new Random();
+    private static final Input INPUT = new Input(new ArrayList<>(),new ArrayList<>(), TIMESTART, TIMEFINISH);
 
     @Autowired
     private ActivityLogService activityLogService;
 
     @Autowired
     private ActivityLogRepository activityLogRepository;
-
 
     @Test
     void contextLoads() {
@@ -144,23 +141,20 @@ class ActivityLogsAnalyticsApplicationTests {
         Assertions.assertEquals(coincidenceCounter, dataPreparedListActivityTypes.size());
     }
 
-//   @Test
-//   public void checkGetListStatusCalculations() {
-//        double countStatuses = 0;
-//        double countActivityTypes;
-//
-//        List<Status> statusList = activityLogService.getListStatus(new ArrayList<>(),new ArrayList<>(),  Timestamp.valueOf(LocalDateTime.parse("2010-01-01T00:00")), Timestamp.valueOf(LocalDateTime.parse("2025-01-01T00:00")));
-//        for (Status status : statusList) {
-//            countStatuses = countStatuses +  status.getStPercent();
-//            countActivityTypes = 0;
-//            for (ActivityType activityType : status.getAtList()){
-//                countActivityTypes = countActivityTypes + activityType.getAtPercent();
-//            }
-//            Assertions.assertEquals((int) Math.round(countActivityTypes), 100);
-//        }
-//        Assertions.assertEquals((int) Math.round(countStatuses), 100);
-//
-//
-//    }
+   @Test
+   public void checkGetListStatusCalculations() {
+        double countStatuses = 0;
+        double countActivityTypes;
 
+        List<Status> statusList = activityLogService.getListStatus(INPUT);
+        for (Status status : statusList) {
+            countStatuses = countStatuses +  status.getStPercent();
+            countActivityTypes = 0;
+            for (ActivityType activityType : status.getAtList()){
+                countActivityTypes = countActivityTypes + activityType.getAtPercent();
+            }
+            Assertions.assertEquals((int) Math.round(countActivityTypes), 100);
+        }
+        Assertions.assertEquals((int) Math.round(countStatuses), 100);
+    }
 }
