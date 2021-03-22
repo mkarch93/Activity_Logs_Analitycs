@@ -2,47 +2,47 @@ package com.radware.activitylog.entity;
 
 public class ActivityType {
 
-    private String at_name;
-    private double at_count;
-    private double at_percent;
+    private String atName;
+    private double atCount;
+    private double atPercent;
 
     public ActivityType(){}
 
-    public ActivityType(String at_name, double at_count) {
-        this.at_name = at_name;
-        this.at_count = at_count;
+    public ActivityType(String atName, double atCount) {
+        this.atName = atName;
+        this.atCount = atCount;
     }
 
-    public String getAt_name() {
-        return at_name;
+    public String getAtName() {
+        return atName;
     }
 
-    public void setAt_name(String at_name) {
-        this.at_name = at_name;
+    public void setAtName(String atName) {
+        this.atName = atName;
     }
 
-    public double getAt_count() {
-        return at_count;
+    public double getAtCount() {
+        return atCount;
     }
 
-    public void setAt_count(double at_count) {
-        this.at_count = at_count;
+    public void setAtCount(double atCount) {
+        this.atCount = atCount;
     }
 
-    public double getAt_percent() {
-        return at_percent;
+    public double getAtPercent() {
+        return atPercent;
     }
 
-    public void setAt_percent(double at_percent) {
-        this.at_percent = at_percent;
+    public void setAtPercent(double atPercent) {
+        this.atPercent = atPercent;
     }
 
     @Override
     public String toString() {
         return "ActivityType{" +
-                "at_name='" + at_name + '\'' +
-                ", at_count=" + at_count +
-                ", at_percent=" + at_percent +
+                "at_name='" + atName + '\'' +
+                ", at_count=" + atCount +
+                ", at_percent=" + atPercent +
                 '}';
     }
 }
