@@ -5,9 +5,8 @@ import com.radware.activitylog.entity.UserActivityLogEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
-import org.springframework.jdbc.core.JdbcTemplate;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -23,30 +22,29 @@ public interface ActivityLogRepository extends JpaRepository<UserActivityLogEnti
     @Query("SELECT new com.radware.activitylog.entity.DataPrepared(d.status, d.activityType, COUNT(*)) " +
             "FROM UserActivityLogEntity d WHERE d.status IN (:status) AND  d.activityType IN (:activityType) " +
             "AND d.startDate BETWEEN (:startDateTime) AND (:finishDateTime) group by 1,2")
-    List<DataPrepared> customPreparedWithParams(@Param("status") ArrayList<String> statuses,
-                                                @Param("activityType") ArrayList<String> activityTypes,
-                                                @Param("startDateTime") Timestamp startDateTime,
-                                                @Param("finishDateTime") Timestamp finishDateTime);
+    List<DataPrepared> customPreparedWithParams(@Param("status") List<String> statuses,
+                                                @Param("activityType") List<String> activityTypes,
+                                                @Param("startDateTime") LocalDateTime startDateTime,
+                                                @Param("finishDateTime") LocalDateTime finishDateTime);
 
     @Query("SELECT new com.radware.activitylog.entity.DataPrepared(d.status, d.activityType, COUNT(*)) " +
             "FROM UserActivityLogEntity d WHERE d.status IN (:status) " +
             "AND d.startDate BETWEEN (:startDateTime) AND (:finishDateTime) group by 1,2")
-    List<DataPrepared> customPreparedWithStatuses(@Param("status") ArrayList<String> statuses,
-                                                  @Param("startDateTime") Timestamp startDateTime,
-                                                  @Param("finishDateTime") Timestamp finishDateTime);
+    List<DataPrepared> customPreparedWithStatuses(@Param("status") List<String> statuses,
+                                                  @Param("startDateTime") LocalDateTime startDateTime,
+                                                  @Param("finishDateTime") LocalDateTime finishDateTime);
 
     @Query("SELECT new com.radware.activitylog.entity.DataPrepared(d.status, d.activityType, COUNT(*)) " +
             "FROM UserActivityLogEntity d WHERE d.activityType IN (:activityType) " +
             "AND d.startDate BETWEEN (:startDateTime) AND (:finishDateTime) group by 1,2")
-    List<DataPrepared> customPreparedWithActivityTypes(@Param("activityType") ArrayList<String> activityTypes,
-                                                       @Param("startDateTime") Timestamp startDateTime,
-                                                       @Param("finishDateTime") Timestamp finishDateTime);
+    List<DataPrepared> customPreparedWithActivityTypes(@Param("activityType") List<String> activityTypes,
+                                                       @Param("startDateTime") LocalDateTime startDateTime,
+                                                       @Param("finishDateTime") LocalDateTime finishDateTime);
 
     @Query("SELECT new com.radware.activitylog.entity.DataPrepared(d.status, d.activityType, COUNT(*)) " +
             "FROM UserActivityLogEntity d WHERE  d.startDate BETWEEN (:startDateTime) AND (:finishDateTime) group by 1,2")
-    List<DataPrepared> customPreparedWithoutParams(@Param("startDateTime") Timestamp startDateTime,
-                                                   @Param("finishDateTime") Timestamp finishDateTime);
-//    JdbcTemplate
+    List<DataPrepared> customPreparedWithoutParams(@Param("startDateTime") LocalDateTime startDateTime,
+                                                   @Param("finishDateTime") LocalDateTime finishDateTime);
 
     @Query("SELECT d.status FROM UserActivityLogEntity d group by 1")
     ArrayList<String> statusesRequest();

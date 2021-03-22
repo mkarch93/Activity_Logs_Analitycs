@@ -4,6 +4,7 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -17,7 +18,7 @@ public class UserActivityLogEntity {
     private UUID userActivityId;
     private String trackingId;
     private String accountId;
-    private Timestamp startDate;
+    private LocalDateTime startDate;
     private String userEmail;
     private String processTypeText;
     private String status;
@@ -65,11 +66,11 @@ public class UserActivityLogEntity {
 
     @Basic
     @Column(name = "start_date")
-    public Timestamp getStartDate() {
+    public LocalDateTime getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Timestamp startDate) {
+    public void setStartDate(LocalDateTime startDate) {
         this.startDate = startDate;
     }
 

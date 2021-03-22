@@ -3,13 +3,13 @@ package com.radware.activitylog.service;
 import com.radware.activitylog.dao.ActivityLogRepository;
 import com.radware.activitylog.entity.ActivityType;
 import com.radware.activitylog.entity.DataPrepared;
+import com.radware.activitylog.entity.Input;
 import com.radware.activitylog.entity.Status;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,11 +30,13 @@ public class ActivityLogService {
     }
 
 
-    public List<Status> getListStatus(ArrayList<String> statuses, ArrayList<String> activityTypes,
-                                      String startDateTime, String finishDateTime) {
+    public List<Status> getListStatus(Input input) {
 
-        Timestamp timeStart = Timestamp.valueOf(LocalDateTime.parse(startDateTime));
-        Timestamp timeFinish = Timestamp.valueOf(LocalDateTime.parse(finishDateTime));
+        List<String> statuses = input.getStatuses();
+        List<String> activityTypes = input.getActivityTypes();
+        LocalDateTime timeStart = input.getStartDateTime();
+        LocalDateTime timeFinish = input.getFinishDateTime();
+
 
 
         List<DataPrepared> dataPreparedList;
@@ -53,7 +55,6 @@ public class ActivityLogService {
             LOGGER.debug("Requesting data with searching parameters: statuses");
             dataPreparedList = activityLogRepository.customPreparedWithStatuses(statuses, timeStart, timeFinish);
             LOGGER.debug("Requesting data with searching parameters: statuses. Success");
-
         }
         else {
             LOGGER.debug("Requesting data with searching parameters: activity types, statuses");
